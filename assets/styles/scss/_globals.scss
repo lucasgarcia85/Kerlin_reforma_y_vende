@@ -127,14 +127,12 @@ h2 {
 
 h1 {
     font-size: 3.3rem;
-    color: #fff;
     @include media-breakpoint-up(md) {
-        font-size: 5.6rem;
+    font-size: 5.6rem;
     }
 }
 
 h2 {
-    text-transform: uppercase;
     font-size: 2.5rem;
     @include media-breakpoint-up(md) {
         font-size: 3.5rem;
