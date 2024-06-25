@@ -1,21 +1,24 @@
 
 .hero {
-    padding-top: 83px;
+    padding-top: 100px;
     padding-bottom: 2rem;
     height: 600px;
-    // padding: 1rem;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
-    background-color: $color-gray-light;
-    position: relative;
+    background-image: linear-gradient(187deg, rgba(255, 255, 255, 0.9), rgba(134, 133, 132, 0.5)), url(../../images/fondohero.jpg);
     overflow: hidden;
     
     
     @include media-breakpoint-up(lg) {
-        padding-top: 0;
+        padding-top: 125px;
         padding-bottom: 2rem;
         height: 700px;
-        height: calc(100vh - 85px);
+        height: calc(100vh);
     }
+
+    
         
     .container{
             display: flex;

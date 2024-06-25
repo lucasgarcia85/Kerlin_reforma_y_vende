@@ -5,6 +5,23 @@ window.addEventListener('scroll', function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+      var scrollPosition = $(window).scrollTop();
+      var opacityChange = Math.max( 0 + (scrollPosition / 200)); // Ajusta el valor 200 según la sensibilidad deseada
+      $('#header').css('background', 'rgba(32,57,111, ' + opacityChange + ')'); // Cambia '#header' por el ID de tu encabezado
+      var opacityChange2 = Math.max( 1 - (scrollPosition / 150)); // Ajusta el valor 200 según la sensibilidad deseada
+      $('#triangle').css('opacity', opacityChange2 ); // Cambia '#header' por el ID de tu encabezado
+
+
+      
+  });
+});
+
+    
+
+
+
 
 /*Update copy automatically
 **************************************************/
@@ -81,4 +98,13 @@ AOS.init({
 
 });
 
+
+
+// $(document).ready(function() {
+//   $(window).on('scroll', function() {
+//       var scrollPosition = $(window).scrollTop();
+//       var opacityChange = Math.max( 0.1 - (scrollPosition / 200)); // Ajusta el valor 200 según la sensibilidad deseada
+//       $('#triangle').css('opacity' + ':' + opacityChange ); // Cambia '#header' por el ID de tu encabezado
+//   });
+// });
 
