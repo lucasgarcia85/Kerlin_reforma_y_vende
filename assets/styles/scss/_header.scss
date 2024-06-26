@@ -4,7 +4,7 @@ header {
     top: 0px;
     width: 100%;
     z-index: 2;
-
+    
     
         
     
@@ -180,10 +180,25 @@ header {
     }
 
     .navbar-brand {
-        img {
+        .marca {
             width: 126px;
             height: auto;
             transition: all 0.3s ease;
+            text-align: center;
+
+            h2{
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 4rem;
+                margin-bottom: -5px;
+            }
+            p{
+                font-family: Arial;
+                font-size: 1.2rem;
+                filter: contrast(0.8) blur(0.5px);
+            }
+
+
         }
     }
 

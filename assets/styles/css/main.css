@@ -12914,10 +12914,22 @@ header .navbar .navbar-collapse .nav-item.contact-us a:after {
 header .navbar .navbar-collapse .nav-item.contact-us i {
   margin-right: 0.5rem;
 }
-header .navbar-brand img {
+header .navbar-brand .marca {
   width: 126px;
   height: auto;
   transition: all 0.3s ease;
+  text-align: center;
+}
+header .navbar-brand .marca h2, header .navbar-brand .marca .h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: -5px;
+}
+header .navbar-brand .marca p {
+  font-family: Arial;
+  font-size: 1.2rem;
+  filter: contrast(0.8) blur(0.5px);
 }
 
 .cambiocolornavlink {
@@ -12951,12 +12963,12 @@ header .navbar-brand img {
 .hero {
   padding-top: 100px;
   padding-bottom: 2rem;
-  height: 600px;
+  height: 650px;
   background-position-y: center;
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  background-image: linear-gradient(187deg, rgba(255, 255, 255, 0.9), rgba(134, 133, 132, 0.5)), url(../../images/fondohero.jpg);
+  background-image: linear-gradient(195deg, rgba(255, 255, 255, 0.6), rgba(134, 133, 132, 0.4)), url(../../images/fondohero.jpg);
   overflow: hidden;
 }
 @media (min-width: 992px) {
