@@ -12804,17 +12804,6 @@ header {
     width: 100%;
   }
 }
-header .triangle {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: -226px;
-  width: 0px;
-  height: 0;
-  border-left: 219px solid transparent;
-  border-right: 370px solid transparent;
-  border-top: 246px solid #20396f;
-}
 header .navbar-toggler {
   border: 0;
   padding: 0;
@@ -12866,7 +12855,7 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   position: relative;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
-  width: 88%;
+  width: 80%;
 }
 @media (min-width: 992px) {
   header .navbar .navbar-collapse .nav-item .nav-link:after {
@@ -12877,7 +12866,8 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     width: 0;
     position: absolute;
     transition: all 0.3s ease;
-    height: 1px;
+    background-color: #20396f;
+    height: 2px;
     bottom: 2px;
   }
 }
@@ -12928,6 +12918,15 @@ header .navbar-brand img {
   width: 126px;
   height: auto;
   transition: all 0.3s ease;
+}
+
+.cambiocolornavlink {
+  color: white !important;
+  transition: all 1.5s ease;
+}
+
+.nav-link.cambiocolornavlink::after {
+  background-color: rgb(255, 255, 255) !important; /* Cambia el color de fondo de :after */
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S1 {
@@ -12994,8 +12993,8 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .hero .container .circle {
-    height: 60vh;
-    width: 60vh;
+    width: 400px;
+    height: 400px;
   }
 }
 .hero .container .circle p {

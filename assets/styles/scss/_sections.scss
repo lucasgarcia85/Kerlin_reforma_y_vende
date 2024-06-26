@@ -52,8 +52,9 @@
 
             @include media-breakpoint-up(lg) {
                
-                height: calc(60vh);
-                width: calc(60vh);
+                width:400px;
+                height: 400px;
+                
             }
 
             p{
