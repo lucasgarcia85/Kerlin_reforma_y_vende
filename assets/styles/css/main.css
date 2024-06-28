@@ -12970,9 +12970,9 @@ header .navbar-brand .marca p {
 }
 @media (min-width: 992px) {
   .hero {
-    padding-top: 90px;
+    padding-top: 120px;
     padding-bottom: 1.5rem;
-    height: 700px;
+    height: 750px;
   }
 }
 .hero .container {
@@ -12980,6 +12980,7 @@ header .navbar-brand .marca p {
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+  padding-top: 30px;
 }
 .hero .container h1, .hero .container .h1 {
   color: #b11f24;
@@ -12988,23 +12989,18 @@ header .navbar-brand .marca p {
 .hero .container h2, .hero .container .h2 {
   color: #20396f;
 }
-.hero .container .circle {
-  overflow: hidden;
-  object-fit: cover;
+.hero .container .circle img {
+  width: 60%;
 }
 @media (min-width: 992px) {
-  .hero .container .circle {
-    width: 60%;
-  }
-}
-@media (min-width: 1200px) {
-  .hero .container .circle {
+  .hero .container .circle img {
     width: 70%;
   }
 }
-.hero .container .circle video {
-  width: 90%;
-  border-radius: 5%;
+@media (min-width: 1200px) {
+  .hero .container .circle img {
+    width: 75%;
+  }
 }
 
 /*PROGRAMA REFERIDOS

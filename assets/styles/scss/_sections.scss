@@ -12,10 +12,10 @@
     
     
     @include media-breakpoint-up(lg) {
-        padding-top: 90px;
+        padding-top: 120px;
         padding-bottom: 1.5rem;
         
-        height: 700px;
+        height: 750px;
     }
  
     .container{
@@ -23,6 +23,7 @@
             flex-flow: column nowrap;
             align-items: center;
             text-align: center;
+            padding-top: 30px;
        
         h1{ 
             color:  $color-sales;
@@ -35,32 +36,29 @@
         }
 
         .circle{
-            
-                               
-           overflow: hidden;
-           object-fit: cover;
-
+                             
+        
+        
             &:hover{
                
             }
 
-            @include media-breakpoint-up(lg) {
-               
-                width:60%;
+            img {
+             width: 60%;
+             
+                          
+                @include media-breakpoint-up(lg) {
+                    
+                    width:70%;
+       
+                }
+                @include media-breakpoint-up(xl) {
+                    
+                    width:75%;
+        
+                }
+            };
                 
-                
-            }
-            @include media-breakpoint-up(xl) {
-               
-                width:70%;
-                
-                
-            }
-
-            video{
-               width: 90%;
-               border-radius: 5%;
-            }
         }
 
 
