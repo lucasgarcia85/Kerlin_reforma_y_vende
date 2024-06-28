@@ -12405,6 +12405,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 /*FONTS
 *******************************/
+@font-face {
+  font-family: "Arial-black";
+  src: url(/assets/fonts/arialblack.ttf);
+}
 /*COLORS
 *******************************/
 html {
@@ -12529,7 +12533,7 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 5.6rem;
+    font-size: 5.3rem;
   }
 }
 
@@ -12538,7 +12542,7 @@ h2, .h2 {
 }
 @media (min-width: 768px) {
   h2, .h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -12797,13 +12801,6 @@ header {
   width: 100%;
   z-index: 2;
 }
-@media (max-width: 991.98px) {
-  header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-  }
-}
 header .navbar-toggler {
   border: 0;
   padding: 0;
@@ -12848,10 +12845,10 @@ header .navbar .navbar-collapse .nav-item:not(:last-child) {
   margin-right: 1.8rem;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
-  font-size: 2rem;
+  font-family: "Arial";
+  font-size: 1.7rem;
   color: #000000;
-  letter-spacing: -0.02em;
-  font-weight: 400;
+  letter-spacing: 0.04em;
   position: relative;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
@@ -12865,7 +12862,6 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     transform: translateX(-50%);
     width: 0;
     position: absolute;
-    transition: all 0.3s ease;
     background-color: #20396f;
     height: 2px;
     bottom: 2px;
@@ -12919,9 +12915,10 @@ header .navbar-brand .marca {
   height: auto;
   transition: all 0.3s ease;
   text-align: center;
+  color: #20396f;
 }
 header .navbar-brand .marca h2, header .navbar-brand .marca .h2 {
-  font-family: Arial;
+  font-family: "Arial-black";
   font-weight: bold;
   font-size: 4rem;
   margin-bottom: -5px;
@@ -12932,9 +12929,9 @@ header .navbar-brand .marca p {
   filter: contrast(0.8) blur(0.5px);
 }
 
-.cambiocolornavlink {
+.texto_blanco {
   color: white !important;
-  transition: all 1.5s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-link.cambiocolornavlink::after {
@@ -12963,7 +12960,7 @@ header .navbar-brand .marca p {
 .hero {
   padding-top: 100px;
   padding-bottom: 2rem;
-  height: 650px;
+  height: 600px;
   background-position-y: center;
   background-size: cover;
   background-attachment: fixed;
@@ -12973,46 +12970,41 @@ header .navbar-brand .marca p {
 }
 @media (min-width: 992px) {
   .hero {
-    padding-top: 125px;
-    padding-bottom: 2rem;
+    padding-top: 90px;
+    padding-bottom: 1.5rem;
     height: 700px;
-    height: 100vh;
   }
 }
 .hero .container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: center;
 }
 .hero .container h1, .hero .container .h1 {
   color: #b11f24;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .hero .container h2, .hero .container .h2 {
   color: #20396f;
 }
 .hero .container .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 350px;
-  background-color: #20396f;
-  color: white;
-  text-align: center;
-  border-radius: 50%;
-  padding: 3rem 1rem;
+  overflow: hidden;
+  object-fit: cover;
 }
 @media (min-width: 992px) {
   .hero .container .circle {
-    width: 400px;
-    height: 400px;
+    width: 60%;
   }
 }
-.hero .container .circle p {
-  font-size: 5rem;
-  font-weight: bold;
-  line-height: 1.1;
+@media (min-width: 1200px) {
+  .hero .container .circle {
+    width: 70%;
+  }
+}
+.hero .container .circle video {
+  width: 90%;
+  border-radius: 5%;
 }
 
 /*PROGRAMA REFERIDOS

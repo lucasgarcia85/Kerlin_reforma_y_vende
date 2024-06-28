@@ -2,7 +2,7 @@
 .hero {
     padding-top: 100px;
     padding-bottom: 2rem;
-    height: 650px;
+    height: 600px;
     background-position-y: center;
     background-size: cover;
     background-attachment: fixed;
@@ -12,24 +12,21 @@
     
     
     @include media-breakpoint-up(lg) {
-        padding-top: 125px;
-        padding-bottom: 2rem;
-        height: 700px;
-        height: calc(100vh);
-    }
-
-    
+        padding-top: 90px;
+        padding-bottom: 1.5rem;
         
+        height: 700px;
+    }
+ 
     .container{
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            
-            
-            
+            text-align: center;
+       
         h1{ 
             color:  $color-sales;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
 
         }
 
@@ -39,28 +36,30 @@
 
         .circle{
             
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 350px;
-            height: 350px;
-            background-color: $color-blue-main;
-            color: white;
-            text-align: center;
-            border-radius: 50%;
-            padding: 3rem 1rem;
+                               
+           overflow: hidden;
+           object-fit: cover;
+
+            &:hover{
+               
+            }
 
             @include media-breakpoint-up(lg) {
                
-                width:400px;
-                height: 400px;
+                width:60%;
+                
+                
+            }
+            @include media-breakpoint-up(xl) {
+               
+                width:70%;
+                
                 
             }
 
-            p{
-                font-size: 5rem;
-                font-weight: bold;
-                line-height: 1.1;
+            video{
+               width: 90%;
+               border-radius: 5%;
             }
         }
 

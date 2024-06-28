@@ -26,15 +26,22 @@ $(document).ready(function() {
  // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
 
 if ($(window).width() < 992) {
-  $('.nav-link').css('color', 'rgba(255,255,255') }
-  
+  $('.nav-link').css('color', 'rgba(255,255,255') 
+  $('.marca').css('color', 'rgba(255,255,255')
+ }
   else{
+  
 
 window.addEventListener('scroll', function () {
   var navLinks = document.querySelectorAll('.nav-link');
+  var marca = document.querySelector('.marca');
+
   navLinks.forEach(function(navlink) {
-    navlink.classList.toggle("cambiocolornavlink", window.scrollY > 0);
+    navlink.classList.toggle("texto_blanco", window.scrollY > 0);
   });
+
+    marca.classList.toggle("texto_blanco", window.scrollY > 0);
+  
 });
 };
 
