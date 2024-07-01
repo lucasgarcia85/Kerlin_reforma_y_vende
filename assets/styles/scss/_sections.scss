@@ -164,16 +164,9 @@
         row-gap: 3rem;
 
         .faq_accordion {
-            width: 95%;
+            width: 90%;
 
-            @include media-breakpoint-up(lg) {
-                width: 70%;
-            }
-
-            @include media-breakpoint-up(xl) {
-                width: 40%;
-            }
-
+         
             .accordion{
                 padding-bottom: 1.5rem;
                 padding-top: 1.5rem;

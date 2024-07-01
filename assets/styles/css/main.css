@@ -13071,17 +13071,7 @@ header .navbar-brand .marca p {
   row-gap: 3rem;
 }
 .preguntas_frecuentes .faq .faq_accordion {
-  width: 95%;
-}
-@media (min-width: 992px) {
-  .preguntas_frecuentes .faq .faq_accordion {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .preguntas_frecuentes .faq .faq_accordion {
-    width: 40%;
-  }
+  width: 90%;
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion {
   padding-bottom: 1.5rem;
