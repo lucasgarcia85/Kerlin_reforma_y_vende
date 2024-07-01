@@ -12624,108 +12624,109 @@ h3, .h3 {
 }
 footer {
   position: relative;
+  background-color: #20396f;
 }
-footer .masInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #24314f;
-  padding: 5rem 0;
+footer .part1 {
+  padding: 4rem;
 }
-footer .masInfo .masInfo__datos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer .part1 .container {
   text-align: center;
-  color: white;
 }
-footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-  font-size: 2.1rem;
+footer .part1 .container .part1_titulo {
+  color: white;
+  font-size: 4.1rem;
   font-weight: bold;
   margin: 0rem 0.3rem;
 }
 @media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-    font-size: 2.5rem;
+  footer .part1 .container .part1_titulo {
+    font-size: 5.5rem;
   }
 }
 @media (min-width: 992px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-    font-size: 3.1rem;
+  footer .part1 .container .part1_titulo {
+    font-size: 6.1rem;
   }
 }
-footer .masInfo .masInfo__datos .masInfo__datos--text {
-  margin-bottom: 2rem;
+footer .part1 .container .part1_texto {
+  color: #c6c4c4;
+  line-height: 1.3;
+  margin-bottom: 1rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
 }
 @media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--text {
-    font-size: 1.9rem;
+  footer .part1 .container .part1_texto {
+    font-size: 3.9rem;
   }
 }
 @media (min-width: 992px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--text {
-    font-size: 2.1rem;
+  footer .part1 .container .part1_texto {
+    font-size: 4.1rem;
   }
 }
-footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-  font-size: 1.6rem;
-  background-color: #1fca1f;
-  border-radius: 22px;
-  border-style: none;
-  color: white;
-  padding: 0.7rem 2.5rem;
-  transition: all 0.3s ease;
-}
-footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp:hover {
-  background-color: #009688;
-}
-@media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-    font-size: 1.9rem;
+@media (min-width: 576px) {
+  footer .part2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
-footer .logo-footer {
-  margin-top: 4rem;
+footer .part2 .part2_datos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-footer .social-links {
+@media (min-width: 576px) {
+  footer .part2 .part2_datos {
+    width: 50%;
+  }
+}
+footer .part2 .part2_datos .social-links {
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 0;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 2rem;
 }
-footer .social-links li {
-  margin-right: 0.6rem;
-}
-footer .social-links li:last-child {
-  margin: 0;
-}
-footer .social-links li a {
-  width: 4rem;
-  height: 4rem;
+footer .part2 .part2_datos .social-links a {
+  font-size: 2rem;
   line-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #20396f;
   color: #fff;
-  border-radius: 50%;
   text-decoration: none;
 }
-footer .social-links li a:hover {
-  background-color: #4764a3;
+footer .part2 .part2_datos .social-links a:hover {
+  scale: 1.1;
   transform: translateY(-0.5rem);
 }
-footer .social-links li a i {
+footer .part2 .part2_datos .social-links a i {
+  margin-right: 2rem;
   font-size: 2.4rem;
 }
+footer .part2 .part2_datos .logo-footer {
+  margin: 3rem 0;
+}
+footer .part2 .part2_imagen {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  footer .part2 .part2_imagen {
+    width: 50%;
+  }
+}
+footer .part2 .part2_imagen img {
+  width: 100%;
+  border-radius: 50px 0 0 0;
+}
 footer .matriculado {
+  margin-top: 1.5rem;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 footer .copyright {
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 1.5rem;
   padding: 0.5rem 0;
@@ -12865,6 +12866,7 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     background-color: #20396f;
     height: 2px;
     bottom: 2px;
+    transition: all 0.5s ease;
   }
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
@@ -12984,13 +12986,13 @@ header .navbar-brand .marca p {
 }
 .hero .container h1, .hero .container .h1 {
   color: #b11f24;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .hero .container h2, .hero .container .h2 {
   color: #20396f;
 }
 .hero .container .circle img {
-  width: 60%;
+  width: 62%;
 }
 @media (min-width: 992px) {
   .hero .container .circle img {
@@ -13100,18 +13102,6 @@ header .navbar-brand .marca p {
   background-color: rgb(251, 251, 251);
   padding: 1.5rem;
 }
-.preguntas_frecuentes .faq .faq_imagen {
-  text-align: center;
-}
-.preguntas_frecuentes .faq .faq_imagen img {
-  width: 90%;
-  margin-bottom: 3rem;
-}
-@media (min-width: 1200px) {
-  .preguntas_frecuentes .faq .faq_imagen img {
-    width: 100%;
-  }
-}
 
 /*CONTACT FORM
 ****************************************/
@@ -13177,66 +13167,6 @@ header .navbar-brand .marca p {
 }
 .formulario .error-msg.visible {
   display: block;
-}
-.formulario .modal {
-  padding: 1rem;
-}
-.formulario .modal-dialog {
-  max-width: 95%;
-}
-@media (min-width: 992px) {
-  .formulario .modal-dialog {
-    max-width: 80%;
-  }
-}
-.formulario .modal-header {
-  padding: 1.5rem;
-  align-items: start;
-}
-@media (min-width: 992px) {
-  .formulario .modal-header {
-    align-items: center;
-  }
-}
-.formulario .modal-header h2, .formulario .modal-header .h2 {
-  width: 95%;
-  font-size: 1.8rem;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  .formulario .modal-header h2, .formulario .modal-header .h2 {
-    width: 100%;
-    font-size: 2.5rem;
-  }
-}
-.formulario .modal-body {
-  padding: 1.5rem;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.formulario .modal-body::-webkit-scrollbar {
-  width: 8px;
-}
-.formulario .modal-body::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.formulario .modal-body::-webkit-scrollbar-thumb {
-  background: #888;
-}
-.formulario .modal-body::-webkit-scrollbar-thumb:hover {
-  background: #666;
-}
-.formulario .modal ol {
-  list-style: none;
-  padding: 0;
-}
-.formulario .modal li,
-.formulario .modal p {
-  text-align: left;
-}
-.formulario .modal li {
-  margin-bottom: 2rem;
 }
 
 /*THANK YOU

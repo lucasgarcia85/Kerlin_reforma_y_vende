@@ -27,24 +27,23 @@
        
         h1{ 
             color:  $color-sales;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
 
         }
 
         h2{
             color:$color-blue-main;
+            
         }
 
         .circle{
                              
         
         
-            &:hover{
-               
-            }
+           
 
             img {
-             width: 60%;
+             width: 62%;
              
                           
                 @include media-breakpoint-up(lg) {
@@ -204,22 +203,6 @@
         }
 
 
-        .faq_imagen {
-            text-align: center;
-
-            img {
-                width: 90%;
-                margin-bottom: 3rem;
-
-                @include media-breakpoint-up(xl) {
-                    width: 100%;
-                }
-
-
-
-            }
-        }
-
     }
 
 }
@@ -311,73 +294,7 @@
     }
 
 
-    .modal {
-        padding: 1rem;
-        &-dialog {
-            max-width: 95%;
-            @include media-breakpoint-up(lg) {
-                max-width: 80%;
-            }
-
-        }
-
-        &-header {
-            padding: 1.5rem;
-            align-items: start;
-            @include media-breakpoint-up(lg) {
-                align-items: center;
-            }
-
-            h2 {
-                width: 95%;
-                font-size: 1.8rem;
-                text-align: center;
-                
-                @include media-breakpoint-up(lg) {
-                    width: 100%;
-                    font-size: 2.5rem;
-                }
-            }
-        }
-
-        &-body {
-            padding: 1.5rem;
-
-            &::-webkit-scrollbar {
-               width: 8px;
-            }
-              
-            /* Track */
-            &::-webkit-scrollbar-track {
-                background: #f1f1f1; 
-            }
-            
-            /* Handle */
-            &::-webkit-scrollbar-thumb {
-                background: #888; 
-            }
-            
-            /* Handle on hover */
-            &::-webkit-scrollbar-thumb:hover {
-                background: #666; 
-            }
-        }
-
-        ol {
-            list-style: none;
-            padding: 0;
-        }
-
-        li,
-        p {
-            text-align: left;
-        }
-
-        li {
-            margin-bottom: 2rem;
-        }
-    }
-
+    
 
 }
 
