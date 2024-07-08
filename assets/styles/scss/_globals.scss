@@ -168,6 +168,30 @@ h3{
     font-size: 1.5rem;
 }
 
+.circulo{
+    
+    color: #fff;
+    background-color: #fff;
+    border: 2px solid $color-blue-main;
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+   
+        
+    i {
+        font-size: 2.2rem;
+        color: $color-blue-main;
+      
+    }
+}
+
+
+
+
+
+
 /*ANIMATIONS
 ********************************************/
   @keyframes bounce-in-top {
