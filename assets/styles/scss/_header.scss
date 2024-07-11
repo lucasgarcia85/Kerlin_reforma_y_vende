@@ -100,10 +100,10 @@ header {
                     margin-right: 1.8rem;
                 }
                 .nav-link{
-                    font-family: 'Arial';
+                    // font-family: 'Arial';
                     font-size: 1.7rem;
                     color:#000000;
-                    letter-spacing: 0.04em;
+                    // letter-spacing: 0.01em;
                     
                     
                     position: relative;
@@ -120,7 +120,7 @@ header {
                             transform: translateX(-50%);
                             width: 0;
                             position: absolute;
-                            background-color: $color-blue-main;
+                            background-color: white;
                             height: 2px;
                             bottom: 2px;
                             transition: all 0.5s ease;
@@ -129,6 +129,8 @@ header {
                 }
 
                 &.contact-us {
+                    font-size: 1.7rem;
+                    letter-spacing: 0.04em;
                     background-color: $color-sales;
                     padding: .2rem 1.8rem;
                     display: flex;
@@ -162,6 +164,8 @@ header {
                     }
 
                     a {
+                        text-decoration: none;
+                        color: white;
                         animation: shake 1.5s infinite;
                         font-weight: 400;
                         position: relative;

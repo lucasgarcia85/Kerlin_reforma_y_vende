@@ -12417,7 +12417,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto serif", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   color: #333;
@@ -12533,7 +12533,7 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 5.3rem;
+    font-size: 5.4rem;
   }
 }
 
@@ -12542,7 +12542,7 @@ h2, .h2 {
 }
 @media (min-width: 768px) {
   h2, .h2 {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -12861,10 +12861,8 @@ header .navbar .navbar-collapse .nav-item:not(:last-child) {
   margin-right: 1.8rem;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
-  font-family: "Arial";
   font-size: 1.7rem;
   color: #000000;
-  letter-spacing: 0.04em;
   position: relative;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
@@ -12878,13 +12876,15 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     transform: translateX(-50%);
     width: 0;
     position: absolute;
-    background-color: #20396f;
+    background-color: white;
     height: 2px;
     bottom: 2px;
     transition: all 0.5s ease;
   }
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
   background-color: #b11f24;
   padding: 0.2rem 1.8rem;
   display: flex;
@@ -12916,6 +12916,8 @@ header .navbar .navbar-collapse .nav-item.contact-us:after {
   z-index: 9;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a {
+  text-decoration: none;
+  color: white;
   animation: shake 1.5s infinite;
   font-weight: 400;
   position: relative;
@@ -12978,16 +12980,16 @@ header .navbar-brand .marca p {
   padding-top: 100px;
   padding-bottom: 2rem;
   height: 600px;
-  background-position-y: center;
+  background-position: 90% 25%;
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  background-image: linear-gradient(195deg, rgba(255, 255, 255, 0.6), rgba(134, 133, 132, 0.4)), url(../../images/fondohero.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(207, 207, 207, 0.8)), url(../../images/fondohero.jpg);
   overflow: hidden;
 }
 @media (min-width: 992px) {
   .hero {
-    padding-top: 120px;
+    padding-top: 105px;
     padding-bottom: 1.5rem;
     height: 750px;
   }
