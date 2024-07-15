@@ -73,6 +73,7 @@
     .container{
 
         h2 {
+            margin: 3rem 0;
             text-align: center;
             color:$color-blue-main;
             @include media-breakpoint-up(lg) {
@@ -82,6 +83,7 @@
         }
 
         h3{
+            margin: 1rem 0 ;
             color:$color-sales;
             font-weight: bold;
             text-align: left;
@@ -94,7 +96,7 @@
 
        
        .lema_contenedor{
-            margin: auto;
+            margin:  4rem auto;
             text-align: center;
             display: flex;
             color: #20396f;
@@ -133,7 +135,7 @@
               
             }
             
-            p{
+           p{
                 text-align: center;
                 margin: 5px 5px;
            
@@ -143,8 +145,47 @@
 
             }
 
+        }
+
+        .como_funciona_lista{
+
+            ul{
+                padding: 0;
 
 
+                li{
+                    margin: 3rem 2rem 2rem 0px;
+                    list-style-type: none;
+                    display: flex;
+                   
+                    .circulo{
+    
+                        color: #fff;
+                        background-color: $color-blue-dark;
+                        min-width: 5rem;
+                        height: 5rem;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 50%;
+                        margin: auto 2rem;
+                        font-family: 'Arial-Black';
+                        font-size: 3.2rem;
+
+                        @include media-breakpoint-up(lg) {
+                            min-width: 6rem;
+                            height: 6rem;
+                            font-size: 4.3rem;
+                        }
+                       
+    
+                    }
+
+                    p {
+                      margin: auto 1rem;
+                      
+                    }
+                }
+            }
         }
 
     }

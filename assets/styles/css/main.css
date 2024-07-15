@@ -12405,16 +12405,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 /*FONTS
 *******************************/
+@font-face {
+  font-family: c;
+  src: url(/assets/fonts/arialblack.ttf);
+}
 /*COLORS
 *******************************/
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 body {
   font-family: "Noto serif", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   color: #333;
   overflow-x: hidden;
@@ -12534,7 +12538,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 @media (min-width: 768px) {
   h2, .h2 {
@@ -12544,7 +12548,7 @@ h2, .h2 {
 
 h3, .h3 {
   padding: 5px 0px;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 #progress-bar {
@@ -12566,21 +12570,6 @@ h3, .h3 {
 
 .lg-sub-html p {
   font-size: 1.5rem;
-}
-
-.circulo {
-  color: #fff;
-  background-color: #fff;
-  border: 2px solid #20396f;
-  width: 4rem;
-  height: 4rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-}
-.circulo i {
-  font-size: 2.2rem;
-  color: #20396f;
 }
 
 /*ANIMATIONS
@@ -13035,6 +13024,7 @@ header .navbar-brand .marca {
 /*FUNCIONAMIENTO
 ***********************************/
 .como_funciona .container h2, .como_funciona .container .h2 {
+  margin: 3rem 0;
   text-align: center;
   color: #20396f;
 }
@@ -13045,6 +13035,7 @@ header .navbar-brand .marca {
   }
 }
 .como_funciona .container h3, .como_funciona .container .h3 {
+  margin: 1rem 0;
   color: #b11f24;
   font-weight: bold;
   text-align: left;
@@ -13053,7 +13044,7 @@ header .navbar-brand .marca {
   text-align: justify;
 }
 .como_funciona .container .lema_contenedor {
-  margin: auto;
+  margin: 4rem auto;
   text-align: center;
   display: flex;
   color: #20396f;
@@ -13095,6 +13086,36 @@ header .navbar-brand .marca {
   .como_funciona .container .lema_contenedor p {
     margin: 10px 5px;
   }
+}
+.como_funciona .container .como_funciona_lista ul {
+  padding: 0;
+}
+.como_funciona .container .como_funciona_lista ul li {
+  margin: 3rem 2rem 2rem 0px;
+  list-style-type: none;
+  display: flex;
+}
+.como_funciona .container .como_funciona_lista ul li .circulo {
+  color: #fff;
+  background-color: #24314f;
+  min-width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin: auto 2rem;
+  font-family: "Arial-Black";
+  font-size: 3.2rem;
+}
+@media (min-width: 992px) {
+  .como_funciona .container .como_funciona_lista ul li .circulo {
+    min-width: 6rem;
+    height: 6rem;
+    font-size: 4.3rem;
+  }
+}
+.como_funciona .container .como_funciona_lista ul li p {
+  margin: auto 1rem;
 }
 
 .como_vendemos .container .cinco .lema_contenedor {

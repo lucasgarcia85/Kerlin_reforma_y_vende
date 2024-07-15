@@ -1,11 +1,11 @@
 html {
     scroll-behavior: smooth;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 body {
     font-family: $font-family-main;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     color: $color-main;
     overflow-x: hidden;
@@ -116,6 +116,8 @@ sup {
 }
 
 
+
+
 h1,
 h2 {
     line-height: 1.15;
@@ -133,7 +135,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     @include media-breakpoint-up(md) {
         font-size: 3.5rem;
     }
@@ -141,7 +143,7 @@ h2 {
 
 h3{
     padding: 5px 0px;
-    font-size: 2rem;
+    font-size: 2.3rem;
 
 }
 
@@ -167,27 +169,6 @@ h3{
 .lg-sub-html p {
     font-size: 1.5rem;
 }
-
-.circulo{
-    
-    color: #fff;
-    background-color: #fff;
-    border: 2px solid $color-blue-main;
-    width: 4rem;
-    height: 4rem;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-   
-        
-    i {
-        font-size: 2.2rem;
-        color: $color-blue-main;
-      
-    }
-}
-
-
 
 
 
