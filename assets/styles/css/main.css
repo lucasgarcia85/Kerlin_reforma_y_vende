@@ -12405,10 +12405,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 /*FONTS
 *******************************/
-@font-face {
-  font-family: "Arial-black";
-  src: url(/assets/fonts/arialblack.ttf);
-}
 /*COLORS
 *******************************/
 html {
@@ -12901,7 +12897,7 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     transform: translateX(-50%);
     width: 0;
     position: absolute;
-    background-color: white;
+    background-color: #e17a7a;
     height: 2px;
     bottom: 2px;
     transition: all 0.5s ease;
@@ -12960,17 +12956,6 @@ header .navbar-brand .marca {
   transition: all 0.3s ease;
   text-align: center;
   color: #20396f;
-}
-header .navbar-brand .marca h2, header .navbar-brand .marca .h2 {
-  font-family: "Arial-black";
-  font-weight: bold;
-  font-size: 4rem;
-  margin-bottom: -5px;
-}
-header .navbar-brand .marca p {
-  font-family: Arial;
-  font-size: 1.2rem;
-  filter: contrast(0.8) blur(0.5px);
 }
 
 .texto_blanco {

@@ -5,6 +5,8 @@ window.addEventListener('scroll', function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+// PARA GRADUAR OPACIDAD DEL HEADER SEGUN EL SCROLL QUE SE HAGA
+
 // $(document).ready(function() {
 
 //   if ($(window).width() < 992) {
@@ -23,29 +25,35 @@ window.addEventListener('scroll', function () {
   
 // });
 
- // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
+  // PARA GRADUAR OPACIDAD DEL HEADER SEGUN EL SCROLL QUE SE HAGA
+  // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
 
-// if ($(window).width() < 992) {
-//   $('.nav-link').css('color', 'rgba(255,255,255') 
-//   $('.marca').css('color', 'rgba(255,255,255')
-//  }
-//   else{
+
+
+
+ // PARA CAMBIAR EL COLOR DE LOS NAVLINK AL SCROLL VERTICAL
+
+if ($(window).width() < 992) {
+  $('.nav-link').css('color', 'rgba(255,255,255') 
+  // $('.marca').css('color', 'rgba(255,255,255')
+ }
+  else{
   
 
-// window.addEventListener('scroll', function () {
-//   var navLinks = document.querySelectorAll('.nav-link');
-//   var marca = document.querySelector('.marca');
+window.addEventListener('scroll', function () {
+  var navLinks = document.querySelectorAll('.nav-link');
+  // var marca = document.querySelector('.marca');
 
-//   navLinks.forEach(function(navlink) {
-//     navlink.classList.toggle("texto_blanco", window.scrollY > 0);
-//   });
+  navLinks.forEach(function(navlink) {
+    navlink.classList.toggle("texto_blanco", window.scrollY > 0);
+  });
 
-//     marca.classList.toggle("texto_blanco", window.scrollY > 0);
+    // marca.classList.toggle("texto_blanco", window.scrollY > 0);
   
-// });
-// };
-
-    // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
+});
+};
+   // PARA CAMBIAR EL COLOR DE LOS NAVLINK AL SCROLL VERTICAL
+  // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
 
 
 
