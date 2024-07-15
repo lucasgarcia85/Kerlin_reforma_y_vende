@@ -12812,10 +12812,35 @@ footer .back-to-top i {
 }
 
 header {
+  transition: all 0.2s ease;
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 2;
+}
+@media (max-width: 991.98px) {
+  header {
+    background-color: #20396f;
+  }
+}
+@media (max-width: 991.98px) {
+  header .logo-white {
+    display: block !important;
+  }
+}
+@media (max-width: 991.98px) {
+  header .logo-blue {
+    display: none !important;
+  }
+}
+header.sticky {
+  background-color: #20396f;
+}
+header.sticky .logo-blue {
+  display: none;
+}
+header.sticky .logo-white {
+  display: block !important;
 }
 header .navbar-toggler {
   border: 0;

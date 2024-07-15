@@ -1,49 +1,49 @@
 /*Sticky header
 *****************************************************/
-// window.addEventListener('scroll', function () {
-//   var header = document.querySelector('header');
-//   header.classList.toggle("sticky", window.scrollY > 0);
-// });
-
-$(document).ready(function() {
-
-  if ($(window).width() < 992) {
-    $('#header').css('background', 'rgba(32,57,111');
-  }
-    else{
-      $(window).on('scroll', function() {
-      var scrollPosition = $(window).scrollTop();
-      var opacityChange = Math.max( 0 + (scrollPosition / 100)); // Ajusta el valor 200 según la sensibilidad deseada
-      $('#header').css('background', 'rgba(32,57,111, ' + opacityChange + ')'); // Cambia '#header' por el ID de tu encabezado
-      // var opacityChange2 = Math.max( 1 - (scrollPosition / 150)); // Ajusta el valor 200 según la sensibilidad deseada
-      // $('#triangle').css('opacity', opacityChange2 ); // Cambia '#header' por el ID de tu encabezado
-      
-      });
-    };
-  
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('header');
+  header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// $(document).ready(function() {
+
+//   if ($(window).width() < 992) {
+//     $('#header').css('background', 'rgba(32,57,111');
+//   }
+//     else{
+//       $(window).on('scroll', function() {
+//       var scrollPosition = $(window).scrollTop();
+//       var opacityChange = Math.max( 0 + (scrollPosition / 100)); // Ajusta el valor 200 según la sensibilidad deseada
+//       $('#header').css('background', 'rgba(32,57,111, ' + opacityChange + ')'); // Cambia '#header' por el ID de tu encabezado
+//       // var opacityChange2 = Math.max( 1 - (scrollPosition / 150)); // Ajusta el valor 200 según la sensibilidad deseada
+//       // $('#triangle').css('opacity', opacityChange2 ); // Cambia '#header' por el ID de tu encabezado
+      
+//       });
+//     };
+  
+// });
 
  // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
 
-if ($(window).width() < 992) {
-  $('.nav-link').css('color', 'rgba(255,255,255') 
-  $('.marca').css('color', 'rgba(255,255,255')
- }
-  else{
+// if ($(window).width() < 992) {
+//   $('.nav-link').css('color', 'rgba(255,255,255') 
+//   $('.marca').css('color', 'rgba(255,255,255')
+//  }
+//   else{
   
 
-window.addEventListener('scroll', function () {
-  var navLinks = document.querySelectorAll('.nav-link');
-  var marca = document.querySelector('.marca');
+// window.addEventListener('scroll', function () {
+//   var navLinks = document.querySelectorAll('.nav-link');
+//   var marca = document.querySelector('.marca');
 
-  navLinks.forEach(function(navlink) {
-    navlink.classList.toggle("texto_blanco", window.scrollY > 0);
-  });
+//   navLinks.forEach(function(navlink) {
+//     navlink.classList.toggle("texto_blanco", window.scrollY > 0);
+//   });
 
-    marca.classList.toggle("texto_blanco", window.scrollY > 0);
+//     marca.classList.toggle("texto_blanco", window.scrollY > 0);
   
-});
-};
+// });
+// };
 
     // NO ESTAN FUNCIONANDO CON RESIZE, PERO SI CON CARGA ORIGINAL
 

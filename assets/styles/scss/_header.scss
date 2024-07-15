@@ -1,11 +1,26 @@
 header {
-
+    transition: all 0.2s ease;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 2;
+
+    @include media-breakpoint-down(lg) {
+        background-color: $color-blue-main;
+    }
+
+    .logo-white {
+        @include media-breakpoint-down(lg) {
+            display: block !important;
+        }
+    }
+
+    .logo-blue {
+        @include media-breakpoint-down(lg) {
+            display: none !important;
+        }
+    }
      
-    
     // @include media-breakpoint-down(lg) {
     // position: fixed;
     // z-index: 2;
@@ -14,20 +29,29 @@ header {
     // }
     
     
-    // &.sticky {
-   
-    //     background-color: $color-blue-main;
-    //     transition: all 1s;
-    //     position: fixed;
-    //     top: 4px;
-    //     width: 100%;
+    &.sticky {
+        background-color: $color-blue-main;
 
-    //     .navbar-brand {
-    //         img {
-    //             width: 100px;
-    //         }
-    //     }
-    // }
+        .logo-blue {
+            display: none;
+        }
+
+        .logo-white {
+            display: block !important;
+        }
+   
+        // background-color: $color-blue-main;
+        // transition: all 1s;
+        // position: fixed;
+        // top: 4px;
+        // width: 100%;
+
+        // .navbar-brand {
+        //     img {
+        //         width: 100px;
+        //     }
+        // }
+    }
 
     // .triangle {
     //     position: absolute;
