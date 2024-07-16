@@ -33,19 +33,19 @@
 
         h2{
             color:$color-blue-main;
+           
+            @include media-breakpoint-up(md) {
+                font-size: 3.5rem;
+            }
             
         }
 
         .circle{
                              
-        
-        
-           
-
+ 
             img {
              width: 62%;
-             
-                          
+                 
                 @include media-breakpoint-up(lg) {
                     
                     width:70%;
@@ -86,7 +86,12 @@
             margin: 1rem 0 ;
             color:$color-sales;
             font-weight: bold;
-            text-align: left;
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                padding: 3rem 0 0;
+                padding: 3rem 0;
+                text-align: left;
+            }
 
         }
         p{
@@ -158,27 +163,27 @@
                     list-style-type: none;
                     display: flex;
                    
-                    .circulo{
+                    // .circulo{
     
-                        color: #fff;
-                        background-color: $color-blue-dark;
-                        min-width: 5rem;
-                        height: 5rem;
-                        display: grid;
-                        place-items: center;
-                        border-radius: 50%;
-                        margin: auto 2rem;
-                        font-family: 'Arial-Black';
-                        font-size: 3.2rem;
+                    //     color: #fff;
+                    //     background-color: $color-blue-dark;
+                    //     min-width: 5rem;
+                    //     height: 5rem;
+                    //     display: grid;
+                    //     place-items: center;
+                    //     border-radius: 50%;
+                    //     margin: auto 2rem;
+                    //     font-family: 'Arial-Black';
+                    //     font-size: 3.2rem;
 
-                        @include media-breakpoint-up(lg) {
-                            min-width: 6rem;
-                            height: 6rem;
-                            font-size: 4.3rem;
-                        }
+                    //     @include media-breakpoint-up(lg) {
+                    //         min-width: 6rem;
+                    //         height: 6rem;
+                    //         font-size: 4.3rem;
+                    //     }
                        
     
-                    }
+                    // }
 
                     p {
                       margin: auto 1rem;
@@ -196,67 +201,120 @@
 
     .container{
 
+        h2 {
+            margin: 3rem 0;
+            text-align: center;
+            color:$color-blue-main;
+            @include media-breakpoint-up(lg) {
+                padding: 3rem 0 0;
+                padding: 3rem 0;
+            }
+        }
 
+        h3{
+            margin: 1rem 0 ;
+            color:$color-sales;
+            font-weight: bold;
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                padding: 3rem 0 0;
+                padding: 3rem 0;
+                text-align: left;
+            }
 
-        .cinco{
+        }
 
+        .como_vendemos_lista{
 
-            .lema_contenedor{
-                margin: auto;
-                text-align: center;
-                display: flex;
-                color: #20396f;
-                font-size: 1.5rem;
-                font-weight: bold;
-                border-radius: 25px;
-                box-shadow: inset 0 0 0 3px #20396f;
-                justify-content: space-evenly;
-    
-                @include media-breakpoint-up(sm) {
-                    font-size: 2rem;
+            .uno,.dos{
+
+                .titulo{
+
+                    margin: 3rem 2rem 2rem 0px;
+                    list-style-type: none;
+                    display: flex;
+
                 }
-                @include media-breakpoint-up(lg) {
-                    font-size: 2.7rem;
-                }
-    
-    
-               .lema{
-       
-                    margin: auto;
-                    width: 45%;
-                    color: #20396f;
-                    border-radius: 25px;
-    
-                }
-                
-                .lema2{
+
+                .contenido{
+
+                    margin: 3rem 2rem 2rem 3rem;
+                    list-style-type: none;
+                    display: flex;
                     
-                    margin: auto;
-                    width: 55%;
-                    color: rgb(255, 255, 255);
-                    background-color: #20396f;
-                    border-radius: 25px;
-                    box-shadow: inset 0 0 0 3px #20396f;
-                    
-                  
-                }
-                
-                p{
-                    text-align: center;
-                    margin: 5px 5px;
-               
-                    @include media-breakpoint-up(lg) {
-                        margin: 10px 5px;
+                    img{
+                        min-width: 96px;
+                        height: 96px;
+                        margin-right: 2rem;
                     }
-    
                 }
-    
-    
-    
+
+
             }
 
 
+            .cinco{
+    
+    
+                .lema_contenedor{
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                    color: #20396f;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    border-radius: 25px;
+                    box-shadow: inset 0 0 0 3px #20396f;
+                    justify-content: space-evenly;
+        
+                    @include media-breakpoint-up(sm) {
+                        font-size: 2rem;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        font-size: 2.7rem;
+                    }
+        
+        
+                   .lema{
+           
+                        margin: auto;
+                        width: 45%;
+                        color: #20396f;
+                        border-radius: 25px;
+        
+                    }
+                    
+                    .lema2{
+                        
+                        margin: auto;
+                        width: 55%;
+                        color: rgb(255, 255, 255);
+                        background-color: #20396f;
+                        border-radius: 25px;
+                        box-shadow: inset 0 0 0 3px #20396f;
+                        
+                      
+                    }
+                    
+                    p{
+                        text-align: center;
+                        margin: 5px 5px;
+                   
+                        @include media-breakpoint-up(lg) {
+                            margin: 10px 5px;
+                        }
+        
+                    }
+        
+        
+        
+                }
+    
+    
+            }
         }
+      
+
 
     }
 

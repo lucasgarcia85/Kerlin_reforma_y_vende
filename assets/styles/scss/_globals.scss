@@ -130,20 +130,20 @@ h2 {
 h1 {
     font-size: 3.3rem;
     @include media-breakpoint-up(md) {
-    font-size: 5.4rem;
+    font-size: 5.5rem;
     }
 }
 
 h2 {
     font-size: 2.6rem;
     @include media-breakpoint-up(md) {
-        font-size: 3.5rem;
+        font-size: 4.6rem;
     }
 }
 
 h3{
     padding: 5px 0px;
-    font-size: 2.3rem;
+    font-size: 2.8rem;
 
 }
 
@@ -168,6 +168,28 @@ h3{
 
 .lg-sub-html p {
     font-size: 1.5rem;
+}
+
+.circulo{
+    
+    color: #fff;
+    background-color: $color-blue-dark;
+    min-width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin: auto 2rem;
+    font-family: 'Arial-Black';
+    font-size: 3.2rem;
+
+    @include media-breakpoint-up(lg) {
+        min-width: 6rem;
+        height: 6rem;
+        font-size: 4.3rem;
+    }
+   
+
 }
 
 
