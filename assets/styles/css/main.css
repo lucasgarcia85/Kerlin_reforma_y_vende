@@ -12538,17 +12538,24 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  color: #20396f;
   font-size: 2.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   h2, .h2 {
     font-size: 4.3rem;
   }
 }
 
 h3, .h3 {
+  color: #b11f24;
   padding: 5px 0px;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
+}
+@media (min-width: 576px) {
+  h3, .h3 {
+    font-size: 3rem;
+  }
 }
 
 #progress-bar {
@@ -13131,46 +13138,135 @@ header .navbar-brand .marca {
   margin: auto 1rem;
 }
 
-.como_vendemos .container h2, .como_vendemos .container .h2 {
+.como_vendemos .container > h2, .como_vendemos .container > .h2 {
   margin: 3rem 0;
   text-align: center;
-  color: #20396f;
 }
 @media (min-width: 992px) {
-  .como_vendemos .container h2, .como_vendemos .container .h2 {
+  .como_vendemos .container > h2, .como_vendemos .container > .h2 {
     padding: 3rem 0 0;
     padding: 3rem 0;
   }
 }
-.como_vendemos .container h3, .como_vendemos .container .h3 {
+.como_vendemos .container > h3, .como_vendemos .container > .h3 {
   margin: 1rem 0;
-  color: #b11f24;
   font-weight: bold;
   text-align: center;
 }
 @media (min-width: 992px) {
-  .como_vendemos .container h3, .como_vendemos .container .h3 {
+  .como_vendemos .container > h3, .como_vendemos .container > .h3 {
     padding: 3rem 0 0;
     padding: 3rem 0;
     text-align: left;
   }
 }
-.como_vendemos .container .como_vendemos_lista .uno .titulo, .como_vendemos .container .como_vendemos_lista .dos .titulo, .como_vendemos .container .como_vendemos_lista .tres .titulo {
+.como_vendemos .container .como_vendemos_lista .uno .titulo, .como_vendemos .container .como_vendemos_lista .dos .titulo {
   margin: 3rem 2rem 2rem 0px;
   list-style-type: none;
   display: flex;
 }
-.como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido {
+.como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido {
   margin: 3rem 2rem 2rem 3rem;
   list-style-type: none;
   display: flex;
 }
-.como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img, .como_vendemos .container .como_vendemos_lista .tres .contenido img {
+.como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img {
   min-width: 96px;
   height: 96px;
   margin-right: 2rem;
 }
-.como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor {
+.como_vendemos .container .como_vendemos_lista .tres .titulo {
+  margin: 3rem 2rem 2rem 0px;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .tres .contenido {
+  margin: 3rem 2rem 2rem 3rem;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .tres .contenido img {
+  min-width: 96px;
+  height: 96px;
+  margin-right: 2rem;
+}
+.como_vendemos .container .como_vendemos_lista .tres .lista_flecha {
+  text-align: center;
+}
+.como_vendemos .container .como_vendemos_lista .tres .lista_flecha h3, .como_vendemos .container .como_vendemos_lista .tres .lista_flecha .h3 {
+  color: #b11f24;
+}
+.como_vendemos .container .como_vendemos_lista .tres .lista_flecha .flecha {
+  width: 35%;
+}
+.como_vendemos .container .como_vendemos_lista .tres .antesydespues {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto {
+  position: relative;
+  width: 40%;
+  border: 5px solid #20396f;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto img {
+  width: 100%;
+}
+.como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto .valor {
+  padding: 0.1rem;
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
+  border-radius: 10px 10px 0 0;
+  background-color: #20396f;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto .valor {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+  }
+}
+.como_vendemos .container .como_vendemos_lista .cuatro .titulo {
+  margin: 3rem 2rem 2rem 0px;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .cuatro .contenido {
+  margin: 3rem 2rem 2rem 3rem;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .cuatro .contenido img {
+  min-width: 96px;
+  height: 96px;
+  margin-right: 2rem;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .titulo {
+  margin: 3rem 2rem 2rem 0px;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .contenido {
+  margin: 3rem 2rem 2rem 3rem;
+  list-style-type: none;
+  display: flex;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .contenido img {
+  min-width: 96px;
+  height: 96px;
+  margin-right: 2rem;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido h3, .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .h3 {
+  margin: 2rem 0;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor {
   margin: auto;
   text-align: center;
   display: flex;
@@ -13182,22 +13278,22 @@ header .navbar-brand .marca {
   justify-content: space-evenly;
 }
 @media (min-width: 576px) {
-  .como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor {
+  .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor {
     font-size: 2rem;
   }
 }
 @media (min-width: 992px) {
-  .como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor {
+  .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor {
     font-size: 2.7rem;
   }
 }
-.como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor .lema {
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor .lema {
   margin: auto;
   width: 45%;
   color: #20396f;
   border-radius: 25px;
 }
-.como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor .lema2 {
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor .lema2 {
   margin: auto;
   width: 55%;
   color: rgb(255, 255, 255);
@@ -13205,13 +13301,72 @@ header .navbar-brand .marca {
   border-radius: 25px;
   box-shadow: inset 0 0 0 3px #20396f;
 }
-.como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor p {
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor p {
   text-align: center;
   margin: 5px 5px;
 }
 @media (min-width: 992px) {
-  .como_vendemos .container .como_vendemos_lista .cinco .lema_contenedor p {
+  .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .lema_contenedor p {
     margin: 10px 5px;
+  }
+}
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p:nth-child(4) {
+  margin-top: 2rem;
+  background-color: #b11f24;
+  color: white;
+  border-radius: 25px;
+  padding: 0.5rem;
+  width: 80%;
+  text-align: center;
+}
+
+.casos_exito .container .proyectos > p {
+  margin: 2rem 0;
+  width: fit-content;
+  font-size: 2.5rem;
+  border-radius: 50px;
+  border: 5px solid #20396f;
+  padding: 1rem 4rem;
+}
+.casos_exito .container .proyectos .p_antesydespues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.casos_exito .container .proyectos .p_antesydespues .foto {
+  position: relative;
+  width: 48%;
+  min-width: 200px;
+  border: 8px solid #20396f;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.casos_exito .container .proyectos .p_antesydespues .foto img {
+  width: 100%;
+}
+.casos_exito .container .proyectos .p_antesydespues .foto .valor {
+  padding: 0.1rem;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  right: 25%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #20396f;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .casos_exito .container .proyectos .p_antesydespues .foto .valor {
+    font-size: 1.3rem;
+    padding: 0.2rem;
   }
 }
 
