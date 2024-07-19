@@ -226,26 +226,42 @@
 
         .como_vendemos_lista{
 
-            .uno,.dos{
+            .uno,.dos,.tres,.cuatro,.cinco{
 
                 .titulo{
 
-                    margin: 3rem 2rem 2rem 0px;
+                    margin-top: 4rem;
                     list-style-type: none;
                     display: flex;
+
+                    &>h2{
+                        margin-left: 1.5rem;
+                    }
 
                 }
 
                 .contenido{
 
-                    margin: 3rem 2rem 2rem 3rem;
+                    margin: 2rem 0;
                     list-style-type: none;
                     display: flex;
+
+                    @include media-breakpoint-up(sm) {
+                        margin: 3rem 2rem 0rem 3rem;
+                    }
+
                     
                     img{
-                        min-width: 96px;
-                        height: 96px;
-                        margin-right: 2rem;
+                        min-width: 45px;
+                        height: 45px;
+                        margin-right: 1rem;
+                        
+                        @include media-breakpoint-up(sm) {
+                            min-width: 96px;
+                            height: 96px;
+                            margin-right: 2rem;
+                        }
+
                     }
                 }
 
@@ -254,27 +270,7 @@
 
             .tres{
 
-                .titulo{
-
-                    margin: 3rem 2rem 2rem 0px;
-                    list-style-type: none;
-                    display: flex;
-
-                }
-
-                .contenido{
-
-                    margin: 3rem 2rem 2rem 3rem;
-                    list-style-type: none;
-                    display: flex;
-                    
-                    img{
-                        min-width: 96px;
-                        height: 96px;
-                        margin-right: 2rem;
-                    }
-                }
-
+               
                 
                 .lista_flecha{
                     text-align: center;
@@ -334,53 +330,14 @@
 
             .cuatro{
                 
-                .titulo{
-
-                    margin: 3rem 2rem 2rem 0px;
-                    list-style-type: none;
-                    display: flex;
-
-                }
-
-                .contenido{
-
-                    margin: 3rem 2rem 2rem 3rem;
-                    list-style-type: none;
-                    display: flex;
-                    
-                    img{
-                        min-width: 96px;
-                        height: 96px;
-                        margin-right: 2rem;
-                    }
-                }
-
+               
 
             }
 
 
             .cinco{
 
-                .titulo{
-
-                    margin: 3rem 2rem 2rem 0px;
-                    list-style-type: none;
-                    display: flex;
-
-                }
-
-                .contenido{
-
-                    margin: 3rem 2rem 2rem 3rem;
-                    list-style-type: none;
-                    display: flex;
-                    
-                    img{
-                        min-width: 96px;
-                        height: 96px;
-                        margin-right: 2rem;
-                    }
-                }
+                
         
                 .finalcontenido{
 
@@ -471,6 +428,8 @@
 
 
 .casos_exito{
+
+    background-color: $color-gray-light;
 
     .container{
 
@@ -623,9 +582,6 @@
 .formulario {
     text-align: center;
     background-color: $color-gray-light;
-    background-repeat: no-repeat;
-    background-position: 10%;
-    background-size: cover;
     color: black;
 
     .tituloFormulario {
