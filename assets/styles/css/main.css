@@ -13430,7 +13430,6 @@ header .navbar-brand .marca {
 .formulario {
   text-align: center;
   background-color: #c6c4c4;
-  background-image: linear-gradient(14deg, rgba(255, 255, 255, 0.65), rgba(40, 19, 123, 0.23)), url(../../images/form_section_bg.png);
   background-repeat: no-repeat;
   background-position: 10%;
   background-size: cover;
@@ -13478,6 +13477,8 @@ header .navbar-brand .marca {
 }
 .formulario form .datos .form-group textarea {
   height: 178px;
+  width: 100%;
+  border: none;
 }
 .formulario .error-msg {
   color: #b11f24;
