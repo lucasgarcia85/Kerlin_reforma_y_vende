@@ -59,19 +59,13 @@
                 }
             }
         }
-
     }
-
 }
-
-
 
 /*FUNCIONAMIENTO
 ***********************************/
 .como_funciona {
-
     .container{
-
         h2 {
             margin: 3rem 0;
             text-align: center;
@@ -81,7 +75,6 @@
                 padding: 3rem 0;
             }
         }
-
         h3{
             margin: 1rem 0 ;
             color:$color-sales;
@@ -92,13 +85,10 @@
                 padding: 3rem 0;
                 text-align: left;
             }
-
         }
         p{
             text-align: justify;
-            
         }
-
        
        .lema_contenedor{
             margin:  4rem auto;
@@ -118,51 +108,39 @@
                 font-size: 2.7rem;
             }
 
-
            .lema{
-   
                 margin: auto;
                 width: 50%;
                 color: #20396f;
                 border-radius: 25px;
-
             }
             
             .lema2{
-                
                 margin: auto;
                 width: 50%;
                 color: rgb(255, 255, 255);
                 background-color: #20396f;
                 border-radius: 25px;
                 box-shadow: inset 0 0 0 3px #20396f;
-                
-              
             }
             
            p{
                 text-align: center;
                 margin: 5px 5px;
-           
                 @include media-breakpoint-up(lg) {
                     margin: 10px 5px;
                 }
-
             }
-
         }
 
         .como_funciona_lista{
-
             ul{
                 padding: 0;
-
-
                 li{
                     margin: 3rem 2rem 2rem 0px;
                     list-style-type: none;
                     display: flex;
-                   
+                  
                     // .circulo{
     
                     //     color: #fff;
@@ -181,26 +159,18 @@
                     //         height: 6rem;
                     //         font-size: 4.3rem;
                     //     }
-                       
-    
                     // }
-
                     p {
                       margin: auto 1rem;
-                      
                     }
                 }
             }
         }
-
     }
-
 }
 
 .como_vendemos{
-
     .container{
-
         &>h2 {
             margin: 3rem 0;
             text-align: center;
@@ -221,68 +191,50 @@
                 padding: 3rem 0;
                 text-align: left;
             }
-
         }
 
         .como_vendemos_lista{
 
             .uno,.dos,.tres,.cuatro,.cinco{
-
                 .titulo{
-
                     margin-top: 4rem;
                     list-style-type: none;
                     display: flex;
-
                     &>h2{
                         margin-left: 1.5rem;
                     }
-
                 }
 
                 .contenido{
-
                     margin: 2rem 0;
                     list-style-type: none;
                     display: flex;
-
                     @include media-breakpoint-up(sm) {
                         margin: 3rem 2rem 0rem 3rem;
                     }
-
                     
                     img{
                         min-width: 45px;
                         height: 45px;
                         margin-right: 1rem;
-                        
                         @include media-breakpoint-up(sm) {
                             min-width: 96px;
                             height: 96px;
                             margin-right: 2rem;
                         }
-
                     }
                 }
-
-
             }
 
             .tres{
-
-               
-                
+              
                 .lista_flecha{
                     text-align: center;
-                    
-                
                     h3{ 
                         color: $color-sales;
-    
                     }
                     .flecha{
                         width: 35%;
-
                     }
                 }
 
@@ -293,7 +245,7 @@
 
                     .foto{
                         position: relative;
-                        width: 40%;
+                        width: 45%;
                         border: 5px solid $color-blue-main;
                         border-radius: 10%;
                         overflow: hidden;
@@ -320,32 +272,16 @@
                                 padding: 0.2rem;
                             }
                         }
-
                     }
-
                 }
-
-
             }
-
-            .cuatro{
-                
-               
-
-            }
-
 
             .cinco{
-
-                
-        
                 .finalcontenido{
-
                     h3{
                         // color: $color-sales;
                         margin: 2rem 0;
                     }
-
                     .lema_contenedor{
                         margin: auto;
                         text-align: center;
@@ -363,37 +299,31 @@
                         @include media-breakpoint-up(lg) {
                             font-size: 2.7rem;
                         }
-            
-            
+                        
                        .lema{
-               
                             margin: auto;
                             width: 45%;
                             color: #20396f;
                             border-radius: 25px;
                         }
-                        
+                      
                         .lema2{
-                            
                             margin: auto;
                             width: 55%;
                             color: rgb(255, 255, 255);
                             background-color: #20396f;
                             border-radius: 25px;
                             box-shadow: inset 0 0 0 3px #20396f;
-                            
                         }
                         
                         p{
                             text-align: center;
                             margin: 5px 5px;
-                       
+                     
                             @include media-breakpoint-up(lg) {
                                 margin: 10px 5px;
                             }
-            
                         }
-            
                     }
 
                     p{
@@ -412,38 +342,16 @@
                         text-align: center;
 
                     }
-
                 }
-    
-    
             }
         }
-      
-
-
     }
-
-    
 }
 
-
 .casos_exito{
-
     background-color: $color-gray-light;
 
     .container{
-
-
-        // h2{
-
-        // }
-
-        // h3{
-
-
-        // }
-
-
         .proyectos{
 
             &>p{
@@ -493,22 +401,16 @@
                             padding: 0.2rem;
                         }
                     }
-
                 }
-
             }
-
         }
-
     }
 }
 
 /*FAQ Accordion
 *************************************/
 .preguntas_frecuentes{
-
     padding-top: 0;
-
     .faq {
         display: flex;
         flex-wrap: wrap;
@@ -519,7 +421,6 @@
 
         .faq_accordion {
             width: 100%;
-
          
             .accordion{
                 padding-bottom: 2rem;
@@ -531,8 +432,7 @@
             .accordion-item{
                 border: none;
                 padding: 15px 0;
-
-                
+               
                 h3 {
                     margin-bottom:15px;
                 }
@@ -551,7 +451,6 @@
                         height: auto;
                         border-radius: 0 65px 65px 0;
                     }
-                                      
                 }
 
                 .accordion-body {
@@ -567,15 +466,9 @@
                     }
                 }
             }
-
         }
-
-
     }
-
 }
-
-
 
 /*CONTACT FORM
 ****************************************/
@@ -589,12 +482,10 @@
 
         p {
             font-size: 1.6rem;
-
             @include media-breakpoint-up(md) {
                 font-size: 2.1rem;
             }
         }
-
     }
 
     h3 {
@@ -607,7 +498,6 @@
     }
 
     form {
-
         .datos {
             display: flex;
             flex-direction: column;
@@ -635,15 +525,8 @@
                     width: 100%;
                     border: none;
                 }
-
             }
-
         }
-
-
-
-
-
     }
 
     .error-msg {
@@ -658,10 +541,6 @@
             display: block;
         }
     }
-
-
-    
-
 }
 
 /*THANK YOU
@@ -684,8 +563,6 @@
     h1 {
         color: $color-blue-main;
     }
-
-
 }
 
 .video {

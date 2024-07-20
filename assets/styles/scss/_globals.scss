@@ -131,9 +131,6 @@ sup {
     top: -0.3em;
 }
 
-
-
-
 h1,
 h2 {
     line-height: 1.15;
@@ -168,9 +165,7 @@ h3{
     @include media-breakpoint-up(sm) {
         font-size: 3rem;
     }
-
 }
-
 #progress-bar {
     position: fixed;
     top: 0;
@@ -195,7 +190,6 @@ h3{
 }
 
 .circulo{
-    
     color: #fff;
     background-color: $color-blue-dark;
     min-width: 4rem;
@@ -212,12 +206,7 @@ h3{
         height: 6rem;
         font-size: 4.3rem;
     }
-   
-
 }
-
-
-
 
 /*ANIMATIONS
 ********************************************/

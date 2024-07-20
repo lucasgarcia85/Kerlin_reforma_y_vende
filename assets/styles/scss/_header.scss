@@ -21,14 +21,6 @@ header {
         }
     }
      
-    // @include media-breakpoint-down(lg) {
-    // position: fixed;
-    // z-index: 2;
-    // width: 100%;
-  
-    // }
-    
-    
     &.sticky {
         background-color: $color-blue-main;
 
@@ -63,14 +55,11 @@ header {
     //     border-left: 219px solid transparent;
     //     border-right: 370px solid transparent;
     //     border-top: 246px solid $color-blue-main;
-        
     //   }
 
     .navbar{
         // background-color: transparent;
-      
-
-        &-toggler {
+      &-toggler {
             border: 0;
             padding: 0;
 
@@ -81,8 +70,7 @@ header {
                 flex-direction: column;
                 background-image: none;
                 transition: all .25s ease-in-out;
-                
-                
+       
                     span{
                         display: block;
                         width: 30px;
@@ -103,8 +91,6 @@ header {
             box-shadow: 0 0 0 0;
         }
 
-
-
         &-nav {
             @include media-breakpoint-down(lg) {
                 padding: 2rem 0;
@@ -113,7 +99,6 @@ header {
 
         .navbar-collapse {
             flex-grow: inherit;
-
             //solucion al problema del click en nav bar desktop
             @include media-breakpoint-up(lg){
                 height: auto !important;
@@ -132,11 +117,9 @@ header {
                     
                     position: relative;
                     &:hover {
-                       
                         &:after {
                             width: 92%;
                         }
-                       
                     }
                     &:after {
                         @include media-breakpoint-up(lg) {
@@ -207,7 +190,6 @@ header {
                 }
             }
         }
-      
     }
 
     .navbar-brand {
@@ -229,25 +211,18 @@ header {
             //     font-size: 1.2rem;
             //     filter: contrast(0.8) blur(0.5px);
             // }
-
-
         }
     }
-
-
-
 }
 
 .texto_blanco{
     color: white !important;
     transition: all .3s ease;
-    
-
 }
 
 .nav-link.cambiocolornavlink::after {
     background-color: rgb(255, 255, 255) !important; /* Cambia el color de fondo de :after */
-  }
+}
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1{
     transform: rotate(45deg) translateY(7px);
@@ -260,6 +235,5 @@ header {
     0%{  scale:1; }
     50%{ scale: 1.1;}
     100%{scale: 1;}
-
 }
 
