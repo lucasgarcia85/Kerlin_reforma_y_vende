@@ -29,38 +29,77 @@
         }
 
         .circle {
-            height: 330px;
-            width: 330px;
-            border-radius: 50%;
-            background-color: $color-blue-main;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 1rem;
-            
-            @include media-breakpoint-up(lg) {
-                height: 450px;
-                width: 450px;
-            }
-
-            h2 {
-                color: $color-white;
-                text-align: center;
-                font-size: 3.2rem;
-                line-height: 1.1;
-                font-weight: 700;
-                font-family: $font-family-main;
-                max-width: 85%;
-                margin: 0 auto;
-
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                background-color: $color-blue-main;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 1rem;
+                padding: 1rem 1rem;
+                overflow: hidden;
+                position: relative;
+                
                 @include media-breakpoint-up(lg) {
-                    font-size: 5.2rem;
+                    height: 450px;
+                    width: 450px;
+                }
+    
+                &:before{
+                    content: "";
+                    position: absolute;
+                    height: 300px;
+                    width: 300px;
+                    background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
+                    animation: rotar 3s linear infinite;
+
+                    @include media-breakpoint-up(lg) {
+                        height: 450px;
+                        width: 450px;
+                    }
+                                    
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    height: 290px;
+                    width: 290px;
+                    background-color: $color-blue-main;
+                    border-radius: 50%;
+
+                    @include media-breakpoint-up(lg) {
+                        height: 440px;
+                        width: 440px;
+                    }
+                }
+    
+                h2 {
+                    color: $color-white;
+                    text-align: center;
+                    font-size: 3.2rem;
+                    line-height: 1.1;
+                    font-weight: 700;
+                    font-family: $font-family-main;
+                    max-width: 85%;
+                    margin: 0 auto;
+                    z-index: 1;
+    
+                    @include media-breakpoint-up(lg) {
+                        font-size: 5.2rem;
+                    }
+                }
+
+                a{
+                    z-index: 1;
+                    padding: 1rem 1rem;
                 }
             }
+
         }
+
     }
-}
 
 /*FUNCIONAMIENTO
 ***********************************/

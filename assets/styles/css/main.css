@@ -12662,6 +12662,14 @@ h3, .h3 {
     opacity: 1;
   }
 }
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 footer {
   position: relative;
   background-color: #20396f;
@@ -13045,8 +13053,8 @@ header .navbar-brand .marca {
   margin-bottom: 2rem;
 }
 .hero .container .circle {
-  height: 330px;
-  width: 330px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   background-color: #20396f;
   display: flex;
@@ -13054,11 +13062,42 @@ header .navbar-brand .marca {
   flex-direction: column;
   justify-content: center;
   margin-top: 1rem;
+  padding: 1rem 1rem;
+  overflow: hidden;
+  position: relative;
 }
 @media (min-width: 992px) {
   .hero .container .circle {
     height: 450px;
     width: 450px;
+  }
+}
+.hero .container .circle:before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
+  animation: rotar 3s linear infinite;
+}
+@media (min-width: 992px) {
+  .hero .container .circle:before {
+    height: 450px;
+    width: 450px;
+  }
+}
+.hero .container .circle:after {
+  content: "";
+  position: absolute;
+  height: 290px;
+  width: 290px;
+  background-color: #20396f;
+  border-radius: 50%;
+}
+@media (min-width: 992px) {
+  .hero .container .circle:after {
+    height: 440px;
+    width: 440px;
   }
 }
 .hero .container .circle h2, .hero .container .circle .h2 {
@@ -13070,11 +13109,16 @@ header .navbar-brand .marca {
   font-family: "Montserrat", sans-serif;
   max-width: 85%;
   margin: 0 auto;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .hero .container .circle h2, .hero .container .circle .h2 {
     font-size: 5.2rem;
   }
+}
+.hero .container .circle a {
+  z-index: 1;
+  padding: 1rem 1rem;
 }
 
 /*FUNCIONAMIENTO
