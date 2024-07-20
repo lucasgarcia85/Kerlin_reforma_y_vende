@@ -1,14 +1,17 @@
 /*FONTS
 *******************************/
-@font-face {
-    font-family: c  ;
-    src: url(/assets/fonts/arialblack.ttf);
-}
+// @font-face {
+//     font-family: c  ;
+//     src: url(/assets/fonts/arialblack.ttf);
+// }
 
-$font-family-main: 'Noto serif', sans-serif;
+$font-family-main: 'Montserrat', sans-serif;
+$font-family-secondary: 'Noto serif', serif;
 
 /*COLORS
 *******************************/
+$color-white: #fff;
+$color-black: #000;
 $color-main: #333;
 $color-blue-main: #20396f;
 $color-blue-dark:#24314f;

@@ -3,7 +3,7 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 2;
+    z-index: 200;
 
     @include media-breakpoint-down(lg) {
         background-color: $color-blue-main;
@@ -128,13 +128,13 @@ header {
                     font-size: 1.7rem;
                     color:#000000;
                     // letter-spacing: 0.01em;
-                    
+                    font-weight: 600;
                     
                     position: relative;
                     &:hover {
                        
                         &:after {
-                            width: 80%;
+                            width: 92%;
                         }
                        
                     }
@@ -148,17 +148,17 @@ header {
                             position: absolute;
                             background-color: $color-sales-2;
                             height: 2px;
-                            bottom: 2px;
-                            transition: all 0.5s ease;
+                            bottom: -2px;
+                            transition: all 0.3s ease;
                         }
                     }
                 }
 
                 &.contact-us {
-                    font-size: 1.7rem;
-                    letter-spacing: 0.04em;
+                    // font-size: 1.7rem;
+                    // letter-spacing: 0.04em;
                     background-color: $color-sales;
-                    padding: .2rem 1.8rem;
+                    padding: .7rem 2.2rem;
                     display: flex;
                     flex-wrap: nowrap;
                     align-items: center;
@@ -167,6 +167,7 @@ header {
                     transition: all 0.3s ease;
                     position: relative;
                     overflow: hidden;
+                    margin-left: 1rem;
                     @include media-breakpoint-down(lg) {
                         margin-top: 2rem;
                     }
