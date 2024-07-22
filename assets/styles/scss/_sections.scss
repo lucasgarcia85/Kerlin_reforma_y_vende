@@ -317,70 +317,40 @@
 
             .cinco{
                 .finalcontenido{
+
+                    margin: auto;
+                    text-align: center;
+                    color:$color-blue-dark;
+                    font-weight: bold;
+                    border-radius: 25px;
+                                      
+        
+                    @include media-breakpoint-up(sm) {
+                        font-size: 2rem;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        font-size: 2.7rem;
+                    }
+
                     h3{
-                        // color: $color-sales;
+                       
                         margin: 2rem 0;
                     }
-                    .lema_contenedor{
-                        margin: auto;
-                        text-align: center;
-                        display: flex;
-                        color: #20396f;
-                        font-size: 1.5rem;
-                        font-weight: bold;
-                        border-radius: 25px;
-                        box-shadow: inset 0 0 0 3px #20396f;
-                        justify-content: space-evenly;
-            
-                        @include media-breakpoint-up(sm) {
-                            font-size: 2rem;
-                        }
-                        @include media-breakpoint-up(lg) {
-                            font-size: 2.7rem;
-                        }
+                    h4{
+                       font-weight: bold;
+                       
                         
-                       .lema{
-                            margin: auto;
-                            width: 45%;
-                            color: #20396f;
-                            border-radius: 25px;
-                        }
-                      
-                        .lema2{
-                            margin: auto;
-                            width: 55%;
-                            color: rgb(255, 255, 255);
-                            background-color: #20396f;
-                            border-radius: 25px;
-                            box-shadow: inset 0 0 0 3px #20396f;
-                        }
-                        
-                        p{
-                            text-align: center;
-                            margin: 5px 5px;
-                     
-                            @include media-breakpoint-up(lg) {
-                                margin: 10px 5px;
-                            }
-                        }
                     }
-
                     p{
-                        margin: 1rem 0;
-                        font-size: 2rem;
-                        font-weight: bold;
-                    }
-
-                    p:nth-child(4){
-                        margin-top: 2rem;
-                        background-color: $color-sales;
-                        color: white;
-                        border-radius: 25px;
-                        padding: 0.5rem;
-                        width: 80%;
                         text-align: center;
-
+                        margin: 5px 5px;
+                 
+                        @include media-breakpoint-up(lg) {
+                            margin: 10px 5px;
+                        }
                     }
+                    
+
                 }
 
                 
@@ -415,11 +385,15 @@
 
                 .foto{
                     position: relative;
-                    width: 48%;
+                    width: 90%;
                     min-width: 200px;
                     border: 8px solid $color-blue-main;
                     border-radius: 10%;
                     overflow: hidden;
+
+                    @include media-breakpoint-up(lg) {
+                        width: 48%;
+                    }
 
                     img{
                         width: 100%
