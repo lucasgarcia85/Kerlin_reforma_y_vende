@@ -53,7 +53,7 @@
                     height: 300px;
                     width: 300px;
                     background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
-                    animation: rotar 3s linear infinite;
+                    animation: rotar 3s infinite;
 
                     @include media-breakpoint-up(lg) {
                         height: 450px;
@@ -382,6 +382,9 @@
 
                     }
                 }
+
+                
+                
             }
         }
     }
@@ -449,7 +452,8 @@
 /*FAQ Accordion
 *************************************/
 .preguntas_frecuentes{
-    padding-top: 0;
+    
+    
     .faq {
         display: flex;
         flex-wrap: wrap;
@@ -478,17 +482,18 @@
                 
                 .accordion-button {
                     color: $color-blue-main;
-                    padding: 1.75rem 5rem;
+                    padding: 1.75rem 4rem;
                     font-size: 1.75rem;
                     font-weight: 700;
-                    background-color: rgb(169, 177, 189);
+                    background-color: rgb(202, 205, 210);
                     line-height: 1.5;
-                    border-radius: 0 65px 0 65px;
-                    height: 120px;
+                    border-radius: 15px;
+                    height: 85px;
 
                     @include media-breakpoint-up(sm) {
                         height: auto;
                         border-radius: 0 65px 65px 0;
+                        font-size: 1.9rem;
                     }
                 }
 
@@ -497,6 +502,10 @@
                     // background-color: rgb(251, 251, 251);
                     text-align: justify;
                     padding: 1.75rem;
+
+                    @include media-breakpoint-up(sm) {
+                        font-size: 1.7rem;
+                    }
 
                     ol {
                         list-style-type: upper-roman; 

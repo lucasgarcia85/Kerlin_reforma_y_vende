@@ -12419,6 +12419,11 @@ body {
   color: #333;
   overflow-x: hidden;
 }
+@media (min-width: 992px) {
+  body {
+    font-size: 2rem;
+  }
+}
 body main {
   overflow: hidden;
 }
@@ -12518,7 +12523,7 @@ strong {
 }
 
 section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 @media (min-width: 992px) {
   section {
@@ -12551,7 +12556,7 @@ h1, .h1 {
 
 h2, .h2 {
   color: #20396f;
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-family: "Noto serif", serif;
 }
 @media (min-width: 576px) {
@@ -12702,6 +12707,7 @@ footer .part1 .container .part1_texto {
   margin-bottom: 1rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
+  margin-top: 4rem;
 }
 @media (min-width: 768px) {
   footer .part1 .container .part1_texto {
@@ -12726,6 +12732,7 @@ footer .part2 .part2_datos {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 15px;
 }
 @media (min-width: 576px) {
   footer .part2 .part2_datos {
@@ -12736,8 +12743,13 @@ footer .part2 .part2_datos .social-links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-  gap: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 576px) {
+  footer .part2 .part2_datos .social-links {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
 }
 footer .part2 .part2_datos .social-links a {
   font-size: 2rem;
@@ -12745,16 +12757,34 @@ footer .part2 .part2_datos .social-links a {
   color: #fff;
   text-decoration: none;
 }
+@media (min-width: 576px) {
+  footer .part2 .part2_datos .social-links a {
+    font-size: 2.5rem;
+  }
+}
 footer .part2 .part2_datos .social-links a:hover {
   scale: 1.1;
   transform: translateY(-0.5rem);
+  color: #e17a7a;
 }
 footer .part2 .part2_datos .social-links a i {
   margin-right: 2rem;
   font-size: 2.4rem;
 }
+@media (min-width: 576px) {
+  footer .part2 .part2_datos .social-links a i {
+    font-size: 3.5rem;
+  }
+}
 footer .part2 .part2_datos .logo-footer {
-  margin: 3rem 0;
+  margin: 4rem 0;
+  width: 170px;
+}
+@media (min-width: 576px) {
+  footer .part2 .part2_datos .logo-footer {
+    width: 210px;
+    margin: 6rem 0;
+  }
 }
 footer .part2 .part2_imagen {
   width: 100%;
@@ -13078,7 +13108,7 @@ header .navbar-brand .marca {
   height: 300px;
   width: 300px;
   background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
-  animation: rotar 3s linear infinite;
+  animation: rotar 3s infinite;
 }
 @media (min-width: 992px) {
   .hero .container .circle:before {
@@ -13413,9 +13443,6 @@ header .navbar-brand .marca {
 
 /*FAQ Accordion
 *************************************/
-.preguntas_frecuentes {
-  padding-top: 0;
-}
 .preguntas_frecuentes .faq {
   display: flex;
   flex-wrap: wrap;
@@ -13442,24 +13469,30 @@ header .navbar-brand .marca {
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-button {
   color: #20396f;
-  padding: 1.75rem 5rem;
+  padding: 1.75rem 4rem;
   font-size: 1.75rem;
   font-weight: 700;
-  background-color: rgb(169, 177, 189);
+  background-color: rgb(202, 205, 210);
   line-height: 1.5;
-  border-radius: 0 65px 0 65px;
-  height: 120px;
+  border-radius: 15px;
+  height: 85px;
 }
 @media (min-width: 576px) {
   .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-button {
     height: auto;
     border-radius: 0 65px 65px 0;
+    font-size: 1.9rem;
   }
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {
   font-size: 1.5rem;
   text-align: justify;
   padding: 1.75rem;
+}
+@media (min-width: 576px) {
+  .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {
+    font-size: 1.7rem;
+  }
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body ol {
   list-style-type: upper-roman;
