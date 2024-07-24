@@ -12522,15 +12522,6 @@ strong {
   font-weight: 700;
 }
 
-section {
-  padding: 4rem 0;
-}
-@media (min-width: 992px) {
-  section {
-    padding: 5rem 0;
-  }
-}
-
 sup {
   top: -0.3em;
 }
@@ -12550,7 +12541,7 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 5.5rem;
+    font-size: 5.3rem;
   }
 }
 
@@ -12561,18 +12552,17 @@ h2, .h2 {
 }
 @media (min-width: 576px) {
   h2, .h2 {
-    font-size: 4.3rem;
+    font-size: 4.1rem;
   }
 }
 
 h3, .h3 {
   color: #b11f24;
-  padding: 5px 0px;
   font-size: 2.3rem;
 }
 @media (min-width: 576px) {
   h3, .h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 
@@ -12582,7 +12572,7 @@ h4, .h4 {
 }
 @media (min-width: 576px) {
   h4, .h4 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -13161,28 +13151,54 @@ header .navbar-brand .marca {
   padding: 1rem 1rem;
 }
 
+/*VIDEO **************************************/
+.video {
+  padding: 4rem 0;
+  background-color: #24314f;
+}
+@media (min-width: 992px) {
+  .video {
+    padding: 5rem 0;
+  }
+}
+.video iframe {
+  height: 350px;
+  border-radius: 1.2rem;
+}
+@media (min-width: 992px) {
+  .video iframe {
+    height: calc(100vh - 74px);
+  }
+}
+
 /*FUNCIONAMIENTO
 ***********************************/
+.como_funciona {
+  padding: 4rem 0;
+}
+@media (min-width: 992px) {
+  .como_funciona {
+    padding: 5rem 0;
+  }
+}
 .como_funciona .container h2, .como_funciona .container .h2 {
-  margin: 3rem 0;
+  margin: 1rem 0;
   text-align: center;
   color: #20396f;
 }
 @media (min-width: 992px) {
   .como_funciona .container h2, .como_funciona .container .h2 {
-    padding: 3rem 0 0;
     padding: 3rem 0;
   }
 }
 .como_funciona .container h3, .como_funciona .container .h3 {
-  margin: 1rem 0;
+  margin: 2rem 0;
   color: #b11f24;
   font-weight: bold;
   text-align: center;
 }
 @media (min-width: 992px) {
   .como_funciona .container h3, .como_funciona .container .h3 {
-    padding: 3rem 0 0;
     padding: 3rem 0;
     text-align: left;
   }
@@ -13246,14 +13262,21 @@ header .navbar-brand .marca {
   margin: auto 1rem;
 }
 
+.como_vendemos {
+  padding-bottom: 4rem;
+}
+@media (min-width: 992px) {
+  .como_vendemos {
+    padding-bottom: 5rem;
+  }
+}
 .como_vendemos .container > h2, .como_vendemos .container > .h2 {
   margin: 3rem 0;
   text-align: center;
 }
 @media (min-width: 992px) {
   .como_vendemos .container > h2, .como_vendemos .container > .h2 {
-    padding: 3rem 0 0;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
 .como_vendemos .container > h3, .como_vendemos .container > .h3 {
@@ -13280,10 +13303,14 @@ header .navbar-brand .marca {
   margin: 2rem 0;
   list-style-type: none;
   display: flex;
+  text-align: justify;
+  margin-left: 6%;
+  padding-bottom: 3rem;
+  border-bottom: 5px solid #20396f;
 }
 @media (min-width: 576px) {
   .como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido, .como_vendemos .container .como_vendemos_lista .cuatro .contenido, .como_vendemos .container .como_vendemos_lista .cinco .contenido {
-    margin: 3rem 2rem 0rem 3rem;
+    margin: 3rem 2rem 0rem 6rem;
   }
 }
 .como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img, .como_vendemos .container .como_vendemos_lista .tres .contenido img, .como_vendemos .container .como_vendemos_lista .cuatro .contenido img, .como_vendemos .container .como_vendemos_lista .cinco .contenido img {
@@ -13297,6 +13324,10 @@ header .navbar-brand .marca {
     height: 96px;
     margin-right: 2rem;
   }
+}
+.como_vendemos .container .como_vendemos_lista .tres .contenido {
+  padding-bottom: 0rem;
+  border-bottom: none;
 }
 .como_vendemos .container .como_vendemos_lista .tres .lista_flecha {
   text-align: center;
@@ -13375,7 +13406,34 @@ header .navbar-brand .marca {
 }
 
 .casos_exito {
-  background-color: #c6c4c4;
+  background-color: rgb(228, 228, 228);
+  padding: 4rem 0;
+}
+@media (min-width: 992px) {
+  .casos_exito {
+    padding: 5rem 0;
+  }
+}
+.casos_exito .container h2, .casos_exito .container .h2 {
+  margin: 1rem 0;
+  text-align: center;
+  color: #20396f;
+}
+@media (min-width: 992px) {
+  .casos_exito .container h2, .casos_exito .container .h2 {
+    padding: 3rem 0;
+  }
+}
+.casos_exito .container h3, .casos_exito .container .h3 {
+  padding: 3rem 0;
+  color: #b11f24;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .casos_exito .container h3, .casos_exito .container .h3 {
+    text-align: left;
+  }
 }
 .casos_exito .container .proyectos > p {
   margin: 2rem 0;
@@ -13429,6 +13487,14 @@ header .navbar-brand .marca {
 
 /*FAQ Accordion
 *************************************/
+.preguntas_frecuentes {
+  padding: 4rem 0;
+}
+@media (min-width: 992px) {
+  .preguntas_frecuentes {
+    padding: 5rem 0;
+  }
+}
 .preguntas_frecuentes .faq {
   display: flex;
   flex-wrap: wrap;
@@ -13488,12 +13554,18 @@ header .navbar-brand .marca {
 /*CONTACT FORM
 ****************************************/
 .formulario {
+  padding: 4rem 0;
   text-align: center;
   background-color: #c6c4c4;
   color: black;
 }
+@media (min-width: 992px) {
+  .formulario {
+    padding: 5rem 0;
+  }
+}
 .formulario .tituloFormulario {
-  margin: 3rem 0 4rem;
+  margin: 2rem 0 4rem;
 }
 .formulario .tituloFormulario p {
   font-size: 1.6rem;
@@ -13504,7 +13576,7 @@ header .navbar-brand .marca {
   }
 }
 .formulario h3, .formulario .h3 {
-  margin: 2.5rem 0rem 2rem;
+  margin: 2.5rem 0rem 3rem;
   font-weight: 700;
 }
 .formulario h3:first-child, .formulario .h3:first-child {
@@ -13566,19 +13638,6 @@ header .navbar-brand .marca {
 }
 .thank-you h1, .thank-you .h1 {
   color: #20396f;
-}
-
-.video {
-  background-color: #24314f;
-}
-.video iframe {
-  height: 350px;
-  border-radius: 1.2rem;
-}
-@media (min-width: 992px) {
-  .video iframe {
-    height: calc(100vh - 74px);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -29,100 +29,122 @@
         }
 
         .circle {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: $color-blue-main;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 1rem;
+            padding: 1rem 1rem;
+            overflow: hidden;
+            position: relative;
+            
+            @include media-breakpoint-up(lg) {
+                height: 450px;
+                width: 450px;
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
                 height: 300px;
                 width: 300px;
-                border-radius: 50%;
-                background-color: $color-blue-main;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                margin-top: 1rem;
-                padding: 1rem 1rem;
-                overflow: hidden;
-                position: relative;
-                
+                background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
+                animation: rotar 3s infinite;
+
                 @include media-breakpoint-up(lg) {
                     height: 450px;
                     width: 450px;
                 }
-    
-                &:before{
-                    content: "";
-                    position: absolute;
-                    height: 300px;
-                    width: 300px;
-                    background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
-                    animation: rotar 3s infinite;
+                                
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                height: 290px;
+                width: 290px;
+                background-color: $color-blue-main;
+                border-radius: 50%;
 
-                    @include media-breakpoint-up(lg) {
-                        height: 450px;
-                        width: 450px;
-                    }
-                                    
-                }
-                &:after{
-                    content: "";
-                    position: absolute;
-                    height: 290px;
-                    width: 290px;
-                    background-color: $color-blue-main;
-                    border-radius: 50%;
-
-                    @include media-breakpoint-up(lg) {
-                        height: 440px;
-                        width: 440px;
-                    }
-                }
-    
-                h2 {
-                    color: $color-white;
-                    text-align: center;
-                    font-size: 3.2rem;
-                    line-height: 1.1;
-                    font-weight: 700;
-                    font-family: $font-family-main;
-                    max-width: 85%;
-                    margin: 0 auto;
-                    z-index: 1;
-    
-                    @include media-breakpoint-up(lg) {
-                        font-size: 5.2rem;
-                    }
-                }
-
-                a{
-                    z-index: 1;
-                    padding: 1rem 1rem;
+                @include media-breakpoint-up(lg) {
+                    height: 440px;
+                    width: 440px;
                 }
             }
 
+            h2 {
+                color: $color-white;
+                text-align: center;
+                font-size: 3.2rem;
+                line-height: 1.1;
+                font-weight: 700;
+                font-family: $font-family-main;
+                max-width: 85%;
+                margin: 0 auto;
+                z-index: 1;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 5.2rem;
+                }
+            }
+
+            a{
+                z-index: 1;
+                padding: 1rem 1rem;
+            }
         }
 
     }
 
+}
+
+/*VIDEO **************************************/
+.video {
+    padding: 4rem 0;
+    background-color: $color-blue-dark;
+    
+    @include media-breakpoint-up(lg) {
+                padding: 5rem 0;
+            }
+
+    iframe {
+        height: 350px;
+        // border: 5px solid $color-white;
+        border-radius: 1.2rem;
+        @include media-breakpoint-up(lg) {
+            height: calc(100vh - 74px);
+        }
+    }
+}
+
 /*FUNCIONAMIENTO
 ***********************************/
 .como_funciona {
+
+        padding: 4rem 0;
+        @include media-breakpoint-up(lg) {
+            padding: 5rem 0;
+        }
     .container{
         h2 {
-            margin: 3rem 0;
+            margin: 1rem 0;
             text-align: center;
             color:$color-blue-main;
             @include media-breakpoint-up(lg) {
-                padding: 3rem 0 0;
                 padding: 3rem 0;
             }
         }
         h3{
-            margin: 1rem 0 ;
+            margin: 2rem 0 ;
             color:$color-sales;
             font-weight: bold;
             text-align: center;
             @include media-breakpoint-up(lg) {
-                padding: 3rem 0 0;
-                padding: 3rem 0;
-                text-align: left;
+               padding: 3rem 0;
+               text-align: left;
             }
         }
         p{
@@ -209,14 +231,18 @@
 }
 
 .como_vendemos{
+    padding-bottom: 4rem;
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 5rem;
+     }
+
     .container{
         &>h2 {
             margin: 3rem 0;
             text-align: center;
             // color:$color-blue-main;
             @include media-breakpoint-up(lg) {
-                padding: 3rem 0 0;
-                padding: 3rem 0;
+               padding: 2rem 0;
             }
         }
 
@@ -235,7 +261,8 @@
         .como_vendemos_lista{
 
             .uno,.dos,.tres,.cuatro,.cinco{
-                .titulo{
+
+               .titulo{
                     margin-top: 4rem;
                     list-style-type: none;
                     display: flex;
@@ -248,10 +275,18 @@
                     margin: 2rem 0;
                     list-style-type: none;
                     display: flex;
+                    text-align: justify;
+
+                    margin-left: 6%;
+                    padding-bottom: 3rem;
+                    border-bottom: 5px solid $color-blue-main;
+
+
                     @include media-breakpoint-up(sm) {
-                        margin: 3rem 2rem 0rem 3rem;
+                        margin: 3rem 2rem 0rem 6rem;
                     }
                     
+                   
                     img{
                         min-width: 45px;
                         height: 45px;
@@ -267,6 +302,10 @@
 
             .tres{
               
+                .contenido{
+                    padding-bottom: 0rem;
+                    border-bottom: none
+                }
                 .lista_flecha{
                     text-align: center;
                     h3{ 
@@ -361,9 +400,33 @@
 }
 
 .casos_exito{
-    background-color: $color-gray-light;
+    background-color: rgb(228, 228, 228);
+    padding: 4rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+    }
 
     .container{
+
+        h2 {
+            margin: 1rem 0;
+            text-align: center;
+            color:$color-blue-main;
+            @include media-breakpoint-up(lg) {
+                padding: 3rem 0;
+            }
+        }
+        h3{
+           
+            padding: 3rem 0;
+            color:$color-sales;
+            font-weight: bold;
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                text-align: left;
+            }
+        }
+
         .proyectos{
 
             &>p{
@@ -426,7 +489,11 @@
 /*FAQ Accordion
 *************************************/
 .preguntas_frecuentes{
-    
+
+    padding: 4rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+     }
     
     .faq {
         display: flex;
@@ -495,12 +562,16 @@
 /*CONTACT FORM
 ****************************************/
 .formulario {
+    padding: 4rem 0;
     text-align: center;
     background-color: $color-gray-light;
     color: black;
-
+    
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+     }
     .tituloFormulario {
-        margin: 3rem 0 4rem;
+        margin: 2rem 0 4rem;
 
         p {
             font-size: 1.6rem;
@@ -511,7 +582,7 @@
     }
 
     h3 {
-        margin: 2.5rem 0rem 2rem;
+        margin: 2.5rem 0rem 3rem;
         font-weight: 700;
 
         &:first-child {
@@ -587,15 +658,3 @@
     }
 }
 
-.video {
-    background-color: $color-blue-dark;
-
-    iframe {
-        height: 350px;
-        // border: 5px solid $color-white;
-        border-radius: 1.2rem;
-        @include media-breakpoint-up(lg) {
-            height: calc(100vh - 74px);
-        }
-    }
-}
