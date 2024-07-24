@@ -15,16 +15,16 @@ $name = $_POST['name'];
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 $textarea = $_POST['textarea'];
-$subject = 'Mensaje recibido desde www.Reformayvendekerlin.com.ar';
+$subject = 'Mensaje recibido desde www.kerlinreformas.com.ar';
 
-$recaptcha_secret = "6LeNcEwpAAAAAJBLFpJDziIqE-aiRSPZNd3pKFd6"; //Add secret key
+$recaptcha_secret = "6LcymxcqAAAAAJSRk7g4GV__I2m3FuzPnCxWE5cE"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
-    <h1>Mensaje recibido desde www.referidoskerlin.com.ar</h1>
+    <h1>Mensaje recibido desde www.kerlinreformas.com.ar</h1>
     <H2>DATOS DE LA PERSONA</H2>
     <p> $name | $email | $telephone</p>
     <h2>MENSAJE SOBRE LA PROPIEDAD A REFORMAR Y VENDER:</h2>
@@ -40,7 +40,7 @@ try {
     $mailer->isSMTP();
     $mailer->Host = 'c1712239.ferozo.com';
     $mailer->SMTPAuth = true;  
-    $mailer->Username = 'info@referidoskerlin.com.ar';
+    $mailer->Username = 'info@kerlinreformas.com.ar';
     $mailer->Password = 'Rioparana7/';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
@@ -49,7 +49,7 @@ try {
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('info@referidoskerlin.com.ar','Sitio web');
+    $mailer->addAddress('info@kerlinreformas.com.ar','Sitio web');
 
     //Content
     $mailer->isHTML(true);
