@@ -12558,11 +12558,11 @@ h2, .h2 {
 
 h3, .h3 {
   color: #b11f24;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 @media (min-width: 576px) {
   h3, .h3 {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -12673,6 +12673,14 @@ h4, .h4 {
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+@keyframes opacidad {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 footer {
@@ -12943,6 +12951,7 @@ header .navbar .navbar-collapse {
 @media (min-width: 992px) {
   header .navbar .navbar-collapse {
     height: auto !important;
+    animation: opacidad 1.3s linear;
   }
 }
 header .navbar .navbar-collapse .nav-item:not(:last-child) {
@@ -13148,7 +13157,14 @@ header .navbar-brand .marca {
 }
 .hero .container .circle a {
   z-index: 1;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  .hero .container .circle a {
+    padding: 1rem 1rem;
+    font-size: 2rem;
+  }
 }
 
 /*VIDEO **************************************/
@@ -13406,7 +13422,7 @@ header .navbar-brand .marca {
 }
 
 .casos_exito {
-  background-color: rgb(228, 228, 228);
+  background-color: #f4eded;
   padding: 4rem 0;
 }
 @media (min-width: 992px) {
@@ -13421,7 +13437,7 @@ header .navbar-brand .marca {
 }
 @media (min-width: 992px) {
   .casos_exito .container h2, .casos_exito .container .h2 {
-    padding: 3rem 0;
+    padding: 3rem 0 0.5rem;
   }
 }
 .casos_exito .container h3, .casos_exito .container .h3 {
@@ -13437,11 +13453,15 @@ header .navbar-brand .marca {
 }
 .casos_exito .container .proyectos > p {
   margin: 2rem 0;
-  width: fit-content;
   font-size: 2.5rem;
-  border-radius: 50px;
-  border: 5px solid #20396f;
-  padding: 1rem 4rem;
+  font-weight: 600;
+  background-color: lightgray;
+  width: fit-content;
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+}
+.casos_exito .container .proyectos > p i {
+  margin-right: 1.5rem;
 }
 .casos_exito .container .proyectos .p_antesydespues {
   display: flex;
@@ -13464,6 +13484,7 @@ header .navbar-brand .marca {
 }
 .casos_exito .container .proyectos .p_antesydespues .foto img {
   width: 100%;
+  height: 100%;
 }
 .casos_exito .container .proyectos .p_antesydespues .foto .valor {
   padding: 0.1rem;
@@ -13483,6 +13504,37 @@ header .navbar-brand .marca {
     font-size: 1.3rem;
     padding: 0.2rem;
   }
+}
+.casos_exito .container .proyectos .proyecto_resumen table {
+  width: 90%;
+  margin: 3rem auto;
+  color: #20396f;
+  font-size: 2rem;
+  font-weight: 500;
+}
+@media (min-width: 576px) {
+  .casos_exito .container .proyectos .proyecto_resumen table {
+    font-size: 3rem;
+  }
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0.7rem 0;
+}
+@media (min-width: 576px) {
+  .casos_exito .container .proyectos .proyecto_resumen table tbody tr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr:nth-child(3) {
+  font-weight: bolder;
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr:nth-child(4) {
+  font-weight: bolder;
 }
 
 /*FAQ Accordion
@@ -13556,8 +13608,8 @@ header .navbar-brand .marca {
 .formulario {
   padding: 4rem 0;
   text-align: center;
-  background-color: #c6c4c4;
   color: black;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../../images/fondoformulario.jpg);
 }
 @media (min-width: 992px) {
   .formulario {
@@ -13607,7 +13659,6 @@ header .navbar-brand .marca {
 .formulario form .datos .form-group textarea {
   height: 178px;
   width: 100%;
-  border: none;
 }
 .formulario .error-msg {
   color: #b11f24;

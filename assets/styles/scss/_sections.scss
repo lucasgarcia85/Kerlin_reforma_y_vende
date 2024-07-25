@@ -93,7 +93,14 @@
 
             a{
                 z-index: 1;
-                padding: 1rem 1rem;
+                padding: 0.5rem 0.9rem;
+                font-size: 1.5rem;
+               
+                @include media-breakpoint-up(lg) {
+                    padding: 1rem 1rem;
+                    font-size: 2rem;
+                    
+                }
             }
         }
 
@@ -400,7 +407,7 @@
 }
 
 .casos_exito{
-    background-color: rgb(228, 228, 228);
+    background-color: $color-gray-light2;
     padding: 4rem 0;
     @include media-breakpoint-up(lg) {
         padding: 5rem 0;
@@ -413,7 +420,7 @@
             text-align: center;
             color:$color-blue-main;
             @include media-breakpoint-up(lg) {
-                padding: 3rem 0;
+                padding: 3rem 0 0.5rem;
             }
         }
         h3{
@@ -431,12 +438,17 @@
 
             &>p{
                 margin: 2rem 0;
-                width: fit-content;
                 font-size: 2.5rem;
-                border-radius: 50px;
-                border: 5px solid $color-blue-main;
-                padding: 1rem 4rem;
+                font-weight: 600;
+                background-color: lightgray;
+                width: fit-content;
+                border-radius: 25px;
+                padding: 0.5rem 3rem;
 
+                i{
+                    margin-right: 1.5rem;
+                }
+               
             }
 
             .p_antesydespues{
@@ -453,13 +465,14 @@
                     border: 8px solid $color-blue-main;
                     border-radius: 10%;
                     overflow: hidden;
-
+                    
                     @include media-breakpoint-up(lg) {
                         width: 48%;
                     }
 
                     img{
-                        width: 100%
+                        width: 100%;
+                        height: 100%
                     };
 
                     .valor{
@@ -478,6 +491,48 @@
                         @include media-breakpoint-up(sm) {
                             font-size: 1.3rem;
                             padding: 0.2rem;
+                        }
+                    }
+                }
+            }
+
+            .proyecto_resumen{
+
+                table {
+                    width: 90%;
+                    margin: 3rem auto;
+                    color: $color-blue-main;
+                    font-size: 2rem;
+                    font-weight: 500;
+
+                    @include media-breakpoint-up(sm) {
+                        font-size: 3rem;
+                       
+                    }
+                   
+                    tbody{
+
+                        
+                        tr{
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            align-items: center;
+                            padding: 0.7rem 0;
+    
+                            @include media-breakpoint-up(sm) {
+                                flex-direction: row;
+                                justify-content: space-between;
+                               
+                            }
+                        
+                            &:nth-child(3){
+                                font-weight: bolder;
+                            }
+                            &:nth-child(4){
+                                font-weight: bolder;
+                            }
+                        
                         }
                     }
                 }
@@ -564,8 +619,9 @@
 .formulario {
     padding: 4rem 0;
     text-align: center;
-    background-color: $color-gray-light;
+    // background-color: $color-gray-light2;
     color: black;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../../images/fondoformulario.jpg);
     
     @include media-breakpoint-up(lg) {
         padding: 5rem 0;
@@ -616,7 +672,7 @@
                 textarea {
                     height: 178px;
                     width: 100%;
-                    border: none;
+                    
                 }
             }
         }
