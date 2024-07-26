@@ -476,7 +476,7 @@
                     };
 
                     .valor{
-                        padding: 0.1rem;
+                        padding: 0.2rem;
                         width: 50%;
                         position: absolute;
                         top: 0px;
@@ -484,13 +484,13 @@
                         border-radius: 0px 0px 10px 10px;
                         background-color: $color-blue-main;
                         color: white;
-                        font-size: 0.7rem;
+                        font-size: 1.3rem;
                         font-weight: bold;
                         text-align: center;
 
                         @include media-breakpoint-up(sm) {
-                            font-size: 1.3rem;
-                            padding: 0.2rem;
+                            font-size: 1.5rem;
+                            
                         }
                     }
                 }
@@ -667,6 +667,7 @@
                     padding: 0.85rem 1rem;
                     font-size: 1.6rem;
                     text-align: left;
+                    border: 1px solid #b3b3b3;
                 }
 
                 textarea {

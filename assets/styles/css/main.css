@@ -13487,7 +13487,7 @@ header .navbar-brand .marca {
   height: 100%;
 }
 .casos_exito .container .proyectos .p_antesydespues .foto .valor {
-  padding: 0.1rem;
+  padding: 0.2rem;
   width: 50%;
   position: absolute;
   top: 0px;
@@ -13495,13 +13495,13 @@ header .navbar-brand .marca {
   border-radius: 0px 0px 10px 10px;
   background-color: #20396f;
   color: white;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
 @media (min-width: 576px) {
   .casos_exito .container .proyectos .p_antesydespues .foto .valor {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.2rem;
   }
 }
@@ -13655,6 +13655,7 @@ header .navbar-brand .marca {
   padding: 0.85rem 1rem;
   font-size: 1.6rem;
   text-align: left;
+  border: 1px solid #b3b3b3;
 }
 .formulario form .datos .form-group textarea {
   height: 178px;
