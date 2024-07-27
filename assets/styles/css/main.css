@@ -12550,9 +12550,9 @@ h2, .h2 {
   font-size: 3rem;
   font-family: "Noto serif", serif;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   h2, .h2 {
-    font-size: 4.1rem;
+    font-size: 5rem;
   }
 }
 
@@ -12560,7 +12560,7 @@ h3, .h3 {
   color: #b11f24;
   font-size: 2.5rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   h3, .h3 {
     font-size: 3.3rem;
   }
@@ -12695,36 +12695,20 @@ footer .part1 .container {
 }
 footer .part1 .container .part1_titulo {
   color: white;
-  font-size: 4.1rem;
   font-weight: bold;
   margin: 0rem 0.3rem;
-}
-@media (min-width: 768px) {
-  footer .part1 .container .part1_titulo {
-    font-size: 5.5rem;
-  }
-}
-@media (min-width: 992px) {
-  footer .part1 .container .part1_titulo {
-    font-size: 6.1rem;
-  }
 }
 footer .part1 .container .part1_texto {
   color: #c6c4c4;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
   margin-top: 4rem;
 }
-@media (min-width: 768px) {
-  footer .part1 .container .part1_texto {
-    font-size: 3.9rem;
-  }
-}
 @media (min-width: 992px) {
   footer .part1 .container .part1_texto {
-    font-size: 4.1rem;
+    font-size: 3.2rem;
   }
 }
 @media (min-width: 576px) {
@@ -12742,9 +12726,9 @@ footer .part2 .part2_datos {
   align-items: center;
   padding: 0 15px;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   footer .part2 .part2_datos {
-    width: 50%;
+    width: 55%;
   }
 }
 footer .part2 .part2_datos .social-links {
@@ -12756,7 +12740,7 @@ footer .part2 .part2_datos .social-links {
 @media (min-width: 576px) {
   footer .part2 .part2_datos .social-links {
     margin-top: 3rem;
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 footer .part2 .part2_datos .social-links a {
@@ -12764,6 +12748,8 @@ footer .part2 .part2_datos .social-links a {
   line-height: 40px;
   color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 576px) {
   footer .part2 .part2_datos .social-links a {
@@ -12771,7 +12757,7 @@ footer .part2 .part2_datos .social-links a {
   }
 }
 footer .part2 .part2_datos .social-links a:hover {
-  scale: 1.1;
+  scale: 1.05;
   transform: translateY(-0.5rem);
   color: #e17a7a;
 }
@@ -12790,7 +12776,6 @@ footer .part2 .part2_datos .logo-footer {
 }
 @media (min-width: 576px) {
   footer .part2 .part2_datos .logo-footer {
-    width: 210px;
     margin: 6rem 0;
   }
 }
@@ -12799,23 +12784,24 @@ footer .part2 .part2_imagen {
 }
 @media (min-width: 576px) {
   footer .part2 .part2_imagen {
-    width: 50%;
+    width: 45%;
   }
 }
 footer .part2 .part2_imagen img {
   width: 100%;
   border-radius: 50px 0 0 0;
 }
-footer .matriculado {
-  margin-top: 1.5rem;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-footer .copyright {
+footer .footer-bottom {
+  background-color: #24314f;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 1.5rem;
   padding: 0.5rem 0;
+}
+footer .matriculado {
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 footer .footer-widget {
   position: fixed;
@@ -13152,19 +13138,11 @@ header .navbar-brand .marca {
 }
 @media (min-width: 992px) {
   .hero .container .circle h2, .hero .container .circle .h2 {
-    font-size: 5.2rem;
+    font-size: 5rem;
   }
 }
-.hero .container .circle a {
+.hero .container .circle .btn {
   z-index: 1;
-  padding: 0.5rem 0.9rem;
-  font-size: 1.5rem;
-}
-@media (min-width: 992px) {
-  .hero .container .circle a {
-    padding: 1rem 1rem;
-    font-size: 2rem;
-  }
 }
 
 /*VIDEO **************************************/
@@ -13202,11 +13180,6 @@ header .navbar-brand .marca {
   text-align: center;
   color: #20396f;
 }
-@media (min-width: 992px) {
-  .como_funciona .container h2, .como_funciona .container .h2 {
-    padding: 3rem 0;
-  }
-}
 .como_funciona .container h3, .como_funciona .container .h3 {
   margin: 2rem 0;
   color: #b11f24;
@@ -13233,14 +13206,10 @@ header .navbar-brand .marca {
   box-shadow: inset 0 0 0 3px #20396f;
   justify-content: space-evenly;
 }
-@media (min-width: 576px) {
-  .como_funciona .container .lema_contenedor {
-    font-size: 2rem;
-  }
-}
 @media (min-width: 992px) {
   .como_funciona .container .lema_contenedor {
     font-size: 2.7rem;
+    max-width: 65%;
   }
 }
 .como_funciona .container .lema_contenedor .lema {
@@ -13320,11 +13289,12 @@ header .navbar-brand .marca {
   list-style-type: none;
   display: flex;
   text-align: justify;
+  align-items: center;
   margin-left: 6%;
   padding-bottom: 3rem;
   border-bottom: 5px solid #20396f;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido, .como_vendemos .container .como_vendemos_lista .cuatro .contenido, .como_vendemos .container .como_vendemos_lista .cinco .contenido {
     margin: 3rem 2rem 0rem 6rem;
   }
@@ -13334,11 +13304,11 @@ header .navbar-brand .marca {
   height: 45px;
   margin-right: 1rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img, .como_vendemos .container .como_vendemos_lista .tres .contenido img, .como_vendemos .container .como_vendemos_lista .cuatro .contenido img, .como_vendemos .container .como_vendemos_lista .cinco .contenido img {
     min-width: 96px;
     height: 96px;
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 }
 .como_vendemos .container .como_vendemos_lista .tres .contenido {
@@ -13389,11 +13359,15 @@ header .navbar-brand .marca {
   }
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido {
+  background-color: #fff;
   margin: auto;
   text-align: center;
   color: #24314f;
   font-weight: bold;
   border-radius: 25px;
+  padding: 2rem;
+  margin-top: 5rem;
+  box-shadow: 0 0 10px 3px #f4eded;
 }
 @media (min-width: 576px) {
   .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido {
@@ -13435,11 +13409,6 @@ header .navbar-brand .marca {
   text-align: center;
   color: #20396f;
 }
-@media (min-width: 992px) {
-  .casos_exito .container h2, .casos_exito .container .h2 {
-    padding: 3rem 0 0.5rem;
-  }
-}
 .casos_exito .container h3, .casos_exito .container .h3 {
   padding: 3rem 0;
   color: #b11f24;
@@ -13467,14 +13436,15 @@ header .navbar-brand .marca {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 .casos_exito .container .proyectos .p_antesydespues .foto {
   position: relative;
   width: 90%;
   min-width: 200px;
-  border: 8px solid #20396f;
-  border-radius: 10%;
+  border: 6px solid #20396f;
+  border-radius: 6%;
   overflow: hidden;
 }
 @media (min-width: 992px) {
@@ -13487,7 +13457,7 @@ header .navbar-brand .marca {
   height: 100%;
 }
 .casos_exito .container .proyectos .p_antesydespues .foto .valor {
-  padding: 0.2rem;
+  padding: 1rem 0;
   width: 50%;
   position: absolute;
   top: 0px;
@@ -13502,7 +13472,6 @@ header .navbar-brand .marca {
 @media (min-width: 576px) {
   .casos_exito .container .proyectos .p_antesydespues .foto .valor {
     font-size: 1.5rem;
-    padding: 0.2rem;
   }
 }
 .casos_exito .container .proyectos .proyecto_resumen table {
@@ -13560,32 +13529,31 @@ header .navbar-brand .marca {
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion {
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  margin-top: 4.5rem;
   --bs-accordion-border: none
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item {
   border: none;
-  padding: 15px 0;
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item h3, .preguntas_frecuentes .faq .faq_accordion .accordion-item .h3 {
   margin-bottom: 15px;
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-button {
   color: #20396f;
-  padding: 1.75rem 4rem;
+  padding: 1.7rem 2rem;
   font-size: 1.75rem;
-  font-weight: 700;
-  background-color: rgb(202, 205, 210);
+  font-weight: 600;
+  background-color: #f4f4f4;
   line-height: 1.5;
   border-radius: 15px;
-  height: 85px;
+  outline: 1px solid #c6c4c4;
+  font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-button {
-    height: auto;
     border-radius: 0 65px 65px 0;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {

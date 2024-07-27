@@ -87,21 +87,25 @@
                 z-index: 1;
 
                 @include media-breakpoint-up(lg) {
-                    font-size: 5.2rem;
+                    font-size: 5rem;
                 }
             }
 
-            a{
+            .btn {
                 z-index: 1;
-                padding: 0.5rem 0.9rem;
-                font-size: 1.5rem;
-               
-                @include media-breakpoint-up(lg) {
-                    padding: 1rem 1rem;
-                    font-size: 2rem;
-                    
-                }
             }
+
+            // a{
+            //     z-index: 1;
+            //     padding: 0.5rem 0.9rem;
+            //     font-size: 1.5rem;
+               
+            //     @include media-breakpoint-up(lg) {
+            //         padding: 1rem 1rem;
+            //         font-size: 2rem;
+                    
+            //     }
+            // }
         }
 
     }
@@ -140,10 +144,11 @@
             margin: 1rem 0;
             text-align: center;
             color:$color-blue-main;
-            @include media-breakpoint-up(lg) {
-                padding: 3rem 0;
-            }
+            // @include media-breakpoint-up(lg) {
+            //     padding: 3rem 0;
+            // }
         }
+
         h3{
             margin: 2rem 0 ;
             color:$color-sales;
@@ -169,11 +174,9 @@
             box-shadow: inset 0 0 0 3px #20396f;
             justify-content: space-evenly;
 
-            @include media-breakpoint-up(sm) {
-                font-size: 2rem;
-            }
             @include media-breakpoint-up(lg) {
                 font-size: 2.7rem;
+                max-width: 65%;
             }
 
            .lema{
@@ -283,13 +286,13 @@
                     list-style-type: none;
                     display: flex;
                     text-align: justify;
-
+                    align-items: center;
                     margin-left: 6%;
                     padding-bottom: 3rem;
                     border-bottom: 5px solid $color-blue-main;
 
 
-                    @include media-breakpoint-up(sm) {
+                    @include media-breakpoint-up(lg) {
                         margin: 3rem 2rem 0rem 6rem;
                     }
                     
@@ -298,10 +301,11 @@
                         min-width: 45px;
                         height: 45px;
                         margin-right: 1rem;
-                        @include media-breakpoint-up(sm) {
+
+                        @include media-breakpoint-up(lg) {
                             min-width: 96px;
                             height: 96px;
-                            margin-right: 2rem;
+                            margin-right: 3rem;
                         }
                     }
                 }
@@ -363,13 +367,16 @@
 
             .cinco{
                 .finalcontenido{
-
+                    background-color: $color-white;
                     margin: auto;
                     text-align: center;
                     color:$color-blue-dark;
                     font-weight: bold;
                     border-radius: 25px;
-                                      
+                    padding: 2rem;
+                    margin-top: 5rem;                  
+                    // border: 3px solid $color-blue-light;
+                    box-shadow: 0 0 10px 3px $color-gray-light2;
         
                     @include media-breakpoint-up(sm) {
                         font-size: 2rem;
@@ -419,9 +426,9 @@
             margin: 1rem 0;
             text-align: center;
             color:$color-blue-main;
-            @include media-breakpoint-up(lg) {
-                padding: 3rem 0 0.5rem;
-            }
+            // @include media-breakpoint-up(lg) {
+            //     padding: 3rem 0 0.5rem;
+            // }
         }
         h3{
            
@@ -445,25 +452,25 @@
                 border-radius: 25px;
                 padding: 0.5rem 3rem;
 
-                i{
+                i {
                     margin-right: 1.5rem;
                 }
                
             }
 
             .p_antesydespues{
-
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 2rem;
+                gap: 3rem;
+                margin-top: 4rem;
 
                 .foto{
                     position: relative;
                     width: 90%;
                     min-width: 200px;
-                    border: 8px solid $color-blue-main;
-                    border-radius: 10%;
+                    border: 6px solid $color-blue-main;
+                    border-radius: 6%;
                     overflow: hidden;
                     
                     @include media-breakpoint-up(lg) {
@@ -476,7 +483,7 @@
                     };
 
                     .valor{
-                        padding: 0.2rem;
+                        padding: 1rem 0;
                         width: 50%;
                         position: absolute;
                         top: 0px;
@@ -563,14 +570,14 @@
          
             .accordion{
                 padding-bottom: 2rem;
-                padding-top: 2rem;
+                margin-top: 4.5rem;
                 --bs-accordion-border: none
                 --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
             }
 
             .accordion-item{
                 border: none;
-                padding: 15px 0;
+                // padding: 15px 0;
                
                 h3 {
                     margin-bottom:15px;
@@ -578,18 +585,18 @@
                 
                 .accordion-button {
                     color: $color-blue-main;
-                    padding: 1.75rem 4rem;
+                    padding: 1.7rem 2rem;
                     font-size: 1.75rem;
-                    font-weight: 700;
-                    background-color: rgb(202, 205, 210);
+                    font-weight: 600;
+                    background-color: #f4f4f4;
                     line-height: 1.5;
                     border-radius: 15px;
-                    height: 85px;
+                    outline: 1px solid $color-gray-light;
+                    font-family: $font-family-main;
 
-                    @include media-breakpoint-up(sm) {
-                        height: auto;
+                    @include media-breakpoint-up(lg) {
                         border-radius: 0 65px 65px 0;
-                        font-size: 1.9rem;
+                        font-size: 1.8rem;
                     }
                 }
 
