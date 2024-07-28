@@ -211,19 +211,19 @@ h4{
 .circulo{
     color: #fff;
     background-color: $color-blue-dark;
-    min-width: 4rem;
-    height: 4rem;
+    min-width: 6rem;
+    height: 6rem;
     display: grid;
     place-items: center;
     border-radius: 50%;
     margin: auto 0;
     font-family: 'Arial-Black';
-    font-size: 2.7rem;
+    font-size: 3.7rem;
 
     @include media-breakpoint-up(lg) {
-        min-width: 6rem;
-        height: 6rem;
-        font-size: 4.3rem;
+        min-width: 8rem;
+        height: 8rem;
+        font-size: 5.3rem;
     }
 }
 

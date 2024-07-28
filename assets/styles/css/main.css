@@ -12600,20 +12600,20 @@ h4, .h4 {
 .circulo {
   color: #fff;
   background-color: #24314f;
-  min-width: 4rem;
-  height: 4rem;
+  min-width: 6rem;
+  height: 6rem;
   display: grid;
   place-items: center;
   border-radius: 50%;
   margin: auto 0;
   font-family: "Arial-Black";
-  font-size: 2.7rem;
+  font-size: 3.7rem;
 }
 @media (min-width: 992px) {
   .circulo {
-    min-width: 6rem;
-    height: 6rem;
-    font-size: 4.3rem;
+    min-width: 8rem;
+    height: 8rem;
+    font-size: 5.3rem;
   }
 }
 
@@ -13239,12 +13239,59 @@ header .navbar-brand .marca {
   padding: 0;
 }
 .como_funciona .container .como_funciona_lista ul li {
-  margin: 3rem 2rem 2rem 0px;
+  margin: 3rem 0rem 1rem 0rem;
   list-style-type: none;
+  background-color: #c6c4c4;
+  height: 12rem;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  padding-left: 5rem;
+  padding-right: 0rem;
   display: flex;
+}
+@media (min-width: 992px) {
+  .como_funciona .container .como_funciona_lista ul li {
+    height: 8rem;
+    border-radius: 50px;
+    margin: 6rem 1rem 1rem 0rem;
+    padding-left: 11rem;
+    padding-right: 3rem;
+  }
+}
+.como_funciona .container .como_funciona_lista ul li .circulo {
+  position: absolute;
+  left: -25px;
+  top: 9px;
+  color: #24314f;
+  background-color: transparent;
+  min-width: 10rem;
+  height: 10rem;
+  display: grid;
+  border-radius: 50%;
+  font-family: "Arial-Black";
+  font-weight: bold;
+  font-size: 5.3rem;
+}
+@media (min-width: 992px) {
+  .como_funciona .container .como_funciona_lista ul li .circulo {
+    left: -10px;
+    top: -11px;
+    color: #fff;
+    background-color: #24314f;
+    min-width: 10rem;
+    height: 10rem;
+    font-size: 6.3rem;
+  }
 }
 .como_funciona .container .como_funciona_lista ul li p {
   margin: auto 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .como_funciona .container .como_funciona_lista ul li p {
+    font-size: 2.1rem;
+  }
 }
 
 .como_vendemos {
@@ -13282,7 +13329,7 @@ header .navbar-brand .marca {
   display: flex;
 }
 .como_vendemos .container .como_vendemos_lista .uno .titulo > h2, .como_vendemos .container .como_vendemos_lista .uno .titulo > .h2, .como_vendemos .container .como_vendemos_lista .dos .titulo > h2, .como_vendemos .container .como_vendemos_lista .dos .titulo > .h2, .como_vendemos .container .como_vendemos_lista .tres .titulo > h2, .como_vendemos .container .como_vendemos_lista .tres .titulo > .h2, .como_vendemos .container .como_vendemos_lista .cuatro .titulo > h2, .como_vendemos .container .como_vendemos_lista .cuatro .titulo > .h2, .como_vendemos .container .como_vendemos_lista .cinco .titulo > h2, .como_vendemos .container .como_vendemos_lista .cinco .titulo > .h2 {
-  margin-left: 1.5rem;
+  margin: auto 1.5rem;
 }
 .como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido, .como_vendemos .container .como_vendemos_lista .cuatro .contenido, .como_vendemos .container .como_vendemos_lista .cinco .contenido {
   margin: 2rem 0;
@@ -13367,7 +13414,7 @@ header .navbar-brand .marca {
   border-radius: 25px;
   padding: 2rem;
   margin-top: 5rem;
-  box-shadow: 0 0 10px 3px #f4eded;
+  box-shadow: 0 0 8px 2px #c6c4c4;
 }
 @media (min-width: 576px) {
   .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido {
@@ -13577,7 +13624,7 @@ header .navbar-brand .marca {
   padding: 4rem 0;
   text-align: center;
   color: black;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../../images/fondoformulario.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../../images/fondoformulario3.jpg);
 }
 @media (min-width: 992px) {
   .formulario {
@@ -13623,7 +13670,7 @@ header .navbar-brand .marca {
   padding: 0.85rem 1rem;
   font-size: 1.6rem;
   text-align: left;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #9c9c9c;
 }
 .formulario form .datos .form-group textarea {
   height: 178px;
