@@ -13246,7 +13246,7 @@ header .navbar-brand .marca {
   border-radius: 0 50px 50px 0;
   position: relative;
   padding-left: 5rem;
-  padding-right: 0rem;
+  padding-right: 1.5rem;
   display: flex;
 }
 @media (min-width: 992px) {
@@ -13286,7 +13286,7 @@ header .navbar-brand .marca {
 .como_funciona .container .como_funciona_lista ul li p {
   margin: auto 1rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .como_funciona .container .como_funciona_lista ul li p {
