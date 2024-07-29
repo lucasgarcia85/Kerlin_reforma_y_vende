@@ -13144,6 +13144,11 @@ header .navbar-brand .marca {
 .hero .container .circle .btn {
   z-index: 1;
 }
+@media (max-width: 991.98px) {
+  .hero .container .circle .btn {
+    padding: 0.85rem 1.2rem;
+  }
+}
 
 /*VIDEO **************************************/
 .video {
