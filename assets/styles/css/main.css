@@ -13472,6 +13472,11 @@ header .navbar-brand .marca {
     text-align: left;
   }
 }
+.casos_exito .container hr {
+  margin-top: 5rem;
+  border-top: 3px solid;
+  opacity: 0.25;
+}
 .casos_exito .container .proyectos > p {
   margin: 2rem 0;
   font-size: 2.5rem;
