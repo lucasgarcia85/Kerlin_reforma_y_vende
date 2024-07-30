@@ -13583,7 +13583,7 @@ header .navbar-brand .marca {
 }
 .casos_exito .container .proyectos .p_antesydespues .foto {
   position: relative;
-  width: 95%;
+  width: 100%;
   min-width: 200px;
   border: 6px solid #20396f;
   border-radius: 6%;
@@ -13640,7 +13640,7 @@ header .navbar-brand .marca {
   font-weight: bolder;
 }
 .casos_exito .container .proyectos .proyecto_resumen table tbody tr td {
-  padding: 10px 15px;
+  padding: 10px 12px;
   text-align: right;
   border-bottom: 1px solid #fff;
   line-height: 1.2;

@@ -547,7 +547,7 @@
 
                 .foto {
                     position: relative;
-                    width: 95%;
+                    width: 100%;
                     min-width: 200px;
                     border: 6px solid $color-blue-main;
                     border-radius: 6%;
@@ -611,7 +611,7 @@
                             }
 
                             td {
-                                padding: 10px 15px;
+                                padding: 10px 12px;
                                 text-align: right;
                                 border-bottom: 1px solid $color-white;
                                 line-height: 1.2;
