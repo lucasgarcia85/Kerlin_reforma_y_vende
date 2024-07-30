@@ -258,9 +258,9 @@
 
                     p {
                         margin: auto 1rem;
-                        font-size: 1.4rem;
+                        font-size: 1.45rem;
                         font-weight: 500;
-                        margin-left: 2rem;
+                        margin-left: 2.5rem;
 
                         @include media-breakpoint-up(lg) {
                             font-size: 2.1rem;
@@ -373,6 +373,10 @@
                 .lista_flecha {
                     text-align: center;
 
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 1rem;
+                    }
+
                     h3 {
                         color: $color-sales;
                     }
@@ -386,9 +390,11 @@
                     display: flex;
                     justify-content: center;
                     gap: 1.6rem;
+                    flex-direction: column;
                     
                     @include media-breakpoint-up(lg) {
                         gap: 3rem;
+                        flex-direction: row;
                     }
 
                     .foto {
@@ -405,7 +411,7 @@
                         ;
 
                         .valor {
-                            padding: 0.4rem 1rem;
+                            padding: 0.6rem 1rem;
                             width: 50%;
                             position: absolute;
                             bottom: 0px;
@@ -413,8 +419,8 @@
                             border-radius: 10px 10px 0 0;
                             background-color: $color-blue-main;
                             color: white;
-                            font-size: 0.7rem;
-                            font-weight: bold;
+                            font-size: 1rem;
+                            font-weight: 700;
                             text-align: center;
 
                             @include media-breakpoint-up(lg) {
@@ -689,8 +695,6 @@
 
                 .accordion-body {
                     font-size: 1.5rem;
-                    // background-color: rgb(251, 251, 251);
-                    text-align: justify;
                     padding: 1.75rem;
 
                     @include media-breakpoint-up(sm) {
@@ -700,7 +704,6 @@
                     ol {
                         list-style-type: upper-roman;
                         list-style-position: outside;
-
                     }
                 }
             }

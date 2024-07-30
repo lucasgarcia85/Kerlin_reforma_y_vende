@@ -12,6 +12,8 @@ header {
     .logo-white {
         @include media-breakpoint-down(lg) {
             display: block !important;
+            width: 100px;
+            padding: .5rem 0;
         }
     }
 
@@ -32,13 +34,9 @@ header {
             display: block !important;
         }
 
-
     }
 
-
     .navbar {
-
-        // background-color: transparent;
         &-toggler {
             border: 0;
             padding: 0;
@@ -74,7 +72,7 @@ header {
 
         &-nav {
             @include media-breakpoint-down(lg) {
-                padding: 2rem 0;
+                padding: 5rem 0 3rem;
             }
         }
 
@@ -88,16 +86,25 @@ header {
             }
 
             .nav-item {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: .5rem;
+                }
+
                 &:not(:last-child) {
-                    margin-right: 1.8rem;
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 1.8rem;
+                    }
                 }
 
                 .nav-link {
-                    // font-family: 'Arial';
                     font-size: 1.7rem;
                     color: #000000;
-                    // letter-spacing: 0.01em;
                     font-weight: 600;
+
+                    @include media-breakpoint-down(lg) {
+                        text-align: center;
+                        font-size: 1.8rem;
+                    }
 
                     position: relative;
 
@@ -139,7 +146,7 @@ header {
                     margin-left: 1rem;
 
                     @include media-breakpoint-down(lg) {
-                        margin-top: 2rem;
+                        margin: 2rem auto 0;
                     }
 
                     &:hover {

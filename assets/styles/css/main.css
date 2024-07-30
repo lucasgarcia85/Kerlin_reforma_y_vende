@@ -12890,6 +12890,8 @@ header {
 @media (max-width: 991.98px) {
   header .logo-white {
     display: block !important;
+    width: 100px;
+    padding: 0.5rem 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -12935,7 +12937,7 @@ header .navbar-toggler:focus {
 }
 @media (max-width: 991.98px) {
   header .navbar-nav {
-    padding: 2rem 0;
+    padding: 5rem 0 3rem;
   }
 }
 header .navbar .navbar-collapse {
@@ -12947,14 +12949,27 @@ header .navbar .navbar-collapse {
     animation: opacidad 1.3s linear;
   }
 }
-header .navbar .navbar-collapse .nav-item:not(:last-child) {
-  margin-right: 1.8rem;
+@media (max-width: 991.98px) {
+  header .navbar .navbar-collapse .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .nav-item:not(:last-child) {
+    margin-right: 1.8rem;
+  }
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.7rem;
   color: #000000;
   font-weight: 600;
   position: relative;
+}
+@media (max-width: 991.98px) {
+  header .navbar .navbar-collapse .nav-item .nav-link {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
   width: 92%;
@@ -12988,7 +13003,7 @@ header .navbar .navbar-collapse .nav-item.contact-us {
 }
 @media (max-width: 991.98px) {
   header .navbar .navbar-collapse .nav-item.contact-us {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
   }
 }
 header .navbar .navbar-collapse .nav-item.contact-us:hover:after {
@@ -13291,9 +13306,9 @@ header .navbar-brand .marca {
 }
 .como_funciona .container .como_funciona_lista ul li p {
   margin: auto 1rem;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 500;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 @media (min-width: 992px) {
   .como_funciona .container .como_funciona_lista ul li p {
@@ -13426,6 +13441,11 @@ header .navbar-brand .marca {
 .como_vendemos .container .como_vendemos_lista .tres .lista_flecha {
   text-align: center;
 }
+@media (max-width: 991.98px) {
+  .como_vendemos .container .como_vendemos_lista .tres .lista_flecha {
+    margin-bottom: 1rem;
+  }
+}
 .como_vendemos .container .como_vendemos_lista .tres .lista_flecha h3, .como_vendemos .container .como_vendemos_lista .tres .lista_flecha .h3 {
   color: #b11f24;
 }
@@ -13436,10 +13456,12 @@ header .navbar-brand .marca {
   display: flex;
   justify-content: center;
   gap: 1.6rem;
+  flex-direction: column;
 }
 @media (min-width: 992px) {
   .como_vendemos .container .como_vendemos_lista .tres .antesydespues {
     gap: 3rem;
+    flex-direction: row;
   }
 }
 .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto {
@@ -13452,7 +13474,7 @@ header .navbar-brand .marca {
   width: 100%;
 }
 .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto .valor {
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1rem;
   width: 50%;
   position: absolute;
   bottom: 0px;
@@ -13460,8 +13482,8 @@ header .navbar-brand .marca {
   border-radius: 10px 10px 0 0;
   background-color: #20396f;
   color: white;
-  font-size: 0.7rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -13687,7 +13709,6 @@ header .navbar-brand .marca {
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-body {
   font-size: 1.5rem;
-  text-align: justify;
   padding: 1.75rem;
 }
 @media (min-width: 576px) {
