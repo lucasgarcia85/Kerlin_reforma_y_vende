@@ -3,27 +3,31 @@ footer {
     background-color: $color-blue-main;
 
     .part1{
-        padding: 4rem;
+        padding: 4rem 2rem;
+        
+        @include media-breakpoint-up(lg) {
+            padding: 4rem;
+        }
 
         .container{
             text-align: center;
 
             .part1_titulo {
                 color: white;
-                font-weight: bold;
+                font-weight: 700;
                 margin: 0rem 0.3rem;
             }
     
             .part1_texto {
                 color:$color-gray-light;
                 line-height: 1.3;
-                margin-bottom: 4rem;
                 margin-right: 0.3rem;
                 margin-left: 0.3rem;
-                margin-top: 4rem;
-    
+                margin-top: 3rem;
+                
                 @include media-breakpoint-up(lg) {
-                    font-size: 3.2rem;
+                    margin-bottom: 4rem;
+                    font-size: 3rem;
                 }
             }
         }

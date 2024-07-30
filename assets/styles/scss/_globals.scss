@@ -11,12 +11,12 @@ body {
     overflow-x: hidden;
 
     @include media-breakpoint-up(lg) {
-        font-size:2rem;
+        font-size: 2rem;
     }
 
 
 
-    main{
+    main {
         overflow: hidden;
     }
 }
@@ -48,6 +48,7 @@ body {
         position: relative;
         z-index: 10;
     }
+
     &:after {
         content: '';
         display: inline-block;
@@ -59,15 +60,17 @@ body {
         background-color: $color-blue-dark;
         z-index: 9;
     }
-    
+
     &.btn-primary {
         background: $color-blue-main;
+
         &:hover {
             &:after {
                 width: 100%;
             }
         }
     }
+
     &.btn-secondary {
         background: $color-sales;
         color: $color-white;
@@ -75,6 +78,7 @@ body {
         &:after {
             background-color: #e62d2d;
         }
+
         &:hover {
             &:after {
                 width: 100%;
@@ -87,14 +91,17 @@ body {
         border-radius: 2.5rem;
         overflow: hidden;
         color: #fff !important;
+
         &:after {
             background-color: #009688;
         }
+
         &:hover {
             &:after {
                 width: 100%;
             }
         }
+
         i {
             margin-right: .7rem;
             font-size: 2rem;
@@ -107,6 +114,7 @@ body {
 a {
     transition: all 0.3s ease;
     color: $color-blue-main;
+
     &:hover {
         color: $color-blue-dark;
     }
@@ -127,7 +135,7 @@ strong {
 }
 
 // section {
-    
+
 //     padding: 4rem 0;
 //     @include media-breakpoint-up(lg) {
 //         padding: 5rem 0;
@@ -142,7 +150,7 @@ sup {
 h1,
 h2 {
     line-height: 1.15;
-    letter-spacing: -.01em;
+    letter-spacing: -.02em;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -150,9 +158,10 @@ h2 {
 h1 {
     font-size: 3.3rem;
     font-weight: 800;
+
     @include media-breakpoint-up(md) {
-    font-size: 5.3rem;
-    
+        font-size: 5.3rem;
+
     }
 }
 
@@ -166,25 +175,30 @@ h2 {
     }
 }
 
-h3{
-    color:$color-sales;
+h3 {
+    color: $color-sales;
     // padding: 5px 0px;
     font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+
     @include media-breakpoint-up(lg) {
         font-size: 3.3rem;
     }
-    
+
 }
 
-h4{
-    
+h4 {
+
     padding: 5px 0px;
     font-size: 2rem;
+
     @include media-breakpoint-up(sm) {
         font-size: 2.7rem;
     }
 
 }
+
 #progress-bar {
     position: fixed;
     top: 0;
@@ -195,6 +209,7 @@ h4{
     z-index: 1000;
     // background-color: $color-blue-main;
     width: 100%;
+
     span {
         // background-color: #4CAF50;
         background-color: $color-sales;
@@ -208,7 +223,7 @@ h4{
     font-size: 1.5rem;
 }
 
-.circulo{
+.circulo {
     color: #fff;
     background-color: $color-blue-dark;
     min-width: 6rem;
@@ -217,8 +232,8 @@ h4{
     place-items: center;
     border-radius: 50%;
     margin: auto 0;
-    font-family: 'Arial-Black';
     font-size: 3.7rem;
+    font-weight: 700;
 
     @include media-breakpoint-up(lg) {
         min-width: 8rem;
@@ -229,72 +244,81 @@ h4{
 
 /*ANIMATIONS
 ********************************************/
-  @keyframes bounce-in-top {
+@keyframes bounce-in-top {
     0% {
         transform: translateY(-500px);
         animation-timing-function: ease-in;
         opacity: 0;
     }
+
     38% {
         transform: translateY(0);
         animation-timing-function: ease-out;
         opacity: 1;
     }
+
     55% {
         transform: translateY(-65px);
         animation-timing-function: ease-in;
     }
+
     72% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
+
     81% {
         transform: translateY(-28px);
         animation-timing-function: ease-in;
     }
+
     90% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
+
     95% {
         transform: translateY(-8px);
         animation-timing-function: ease-in;
     }
+
     100% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
-  }
+}
 
 
- @keyframes scale-in-center {
+@keyframes scale-in-center {
     0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes rotar {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(-360deg);
     }
 }
+
 @keyframes opacidad {
-    from{
+    from {
         opacity: 0.1;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-  
-  

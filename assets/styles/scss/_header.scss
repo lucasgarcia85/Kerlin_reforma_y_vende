@@ -20,7 +20,7 @@ header {
             display: none !important;
         }
     }
-     
+
     &.sticky {
         background-color: $color-blue-main;
 
@@ -31,14 +31,15 @@ header {
         .logo-white {
             display: block !important;
         }
-   
-      
+
+
     }
 
-   
-    .navbar{
+
+    .navbar {
+
         // background-color: transparent;
-      &-toggler {
+        &-toggler {
             border: 0;
             padding: 0;
 
@@ -49,22 +50,23 @@ header {
                 flex-direction: column;
                 background-image: none;
                 transition: all .25s ease-in-out;
-       
-                    span{
-                        display: block;
-                        width: 30px;
-                        height: 3px;
-                        background-color: #fff;
-                        transition: all .25s ease-in-out;
-                        &:not(:last-child) {
-                            margin-bottom: 7px;
-                        }
+
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background-color: #fff;
+                    transition: all .25s ease-in-out;
+
+                    &:not(:last-child) {
+                        margin-bottom: 7px;
                     }
+                }
             }
 
         }
-        
-        &-toggler:focus{
+
+        &-toggler:focus {
             text-decoration: none;
             outline: 0;
             box-shadow: 0 0 0 0;
@@ -78,8 +80,9 @@ header {
 
         .navbar-collapse {
             flex-grow: inherit;
+
             //solucion al problema del click en nav bar desktop
-            @include media-breakpoint-up(lg){
+            @include media-breakpoint-up(lg) {
                 height: auto !important;
                 animation: opacidad 1.3s linear;
             }
@@ -88,19 +91,22 @@ header {
                 &:not(:last-child) {
                     margin-right: 1.8rem;
                 }
-                .nav-link{
+
+                .nav-link {
                     // font-family: 'Arial';
                     font-size: 1.7rem;
-                    color:#000000;
+                    color: #000000;
                     // letter-spacing: 0.01em;
                     font-weight: 600;
-                    
+
                     position: relative;
+
                     &:hover {
                         &:after {
                             width: 92%;
                         }
                     }
+
                     &:after {
                         @include media-breakpoint-up(lg) {
                             content: '';
@@ -121,7 +127,7 @@ header {
                     // font-size: 1.7rem;
                     // letter-spacing: 0.04em;
                     background-color: $color-sales;
-                    padding: .7rem 2.2rem;
+                    padding: .7rem 2.4rem;
                     display: flex;
                     flex-wrap: nowrap;
                     align-items: center;
@@ -131,10 +137,11 @@ header {
                     position: relative;
                     overflow: hidden;
                     margin-left: 1rem;
+
                     @include media-breakpoint-down(lg) {
                         margin-top: 2rem;
                     }
-                    
+
                     &:hover {
                         &:after {
                             width: 100%;
@@ -157,13 +164,16 @@ header {
                         text-decoration: none;
                         color: white;
                         animation: shake 1.5s infinite;
-                        font-weight: 400;
+                        font-weight: 500;
                         position: relative;
                         z-index: 10;
+                        font-size: 1.6rem;
+
                         &:after {
                             display: none;
                         }
                     }
+
                     i {
                         margin-right: .5rem;
                     }
@@ -179,7 +189,7 @@ header {
             transition: all 0.3s ease;
             text-align: center;
             color: $color-blue-main;
-            
+
             // h2{
             //     font-family: 'Arial-black';
             //     font-weight: bold;
@@ -195,25 +205,34 @@ header {
     }
 }
 
-.texto_blanco{
+.texto_blanco {
     color: white !important;
     transition: all .3s ease;
 }
 
 .nav-link.cambiocolornavlink::after {
-    background-color: rgb(255, 255, 255) !important; /* Cambia el color de fondo de :after */
+    background-color: rgb(255, 255, 255) !important;
+    /* Cambia el color de fondo de :after */
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1{
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1 {
     transform: rotate(45deg) translateY(7px);
 }
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2{
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2 {
     transform: rotate(-45deg) translateY(-7px);
 }
 
 @keyframes shake {
-    0%{  scale:1; }
-    50%{ scale: 1.1;}
-    100%{scale: 1;}
-}
+    0% {
+        scale: 1;
+    }
 
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

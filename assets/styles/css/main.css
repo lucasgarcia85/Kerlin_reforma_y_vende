@@ -12530,7 +12530,7 @@ h1, .h1,
 h2,
 .h2 {
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -12559,6 +12559,8 @@ h2, .h2 {
 h3, .h3 {
   color: #b11f24;
   font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 @media (min-width: 992px) {
   h3, .h3 {
@@ -12606,8 +12608,8 @@ h4, .h4 {
   place-items: center;
   border-radius: 50%;
   margin: auto 0;
-  font-family: "Arial-Black";
   font-size: 3.7rem;
+  font-weight: 700;
 }
 @media (min-width: 992px) {
   .circulo {
@@ -12688,27 +12690,32 @@ footer {
   background-color: #20396f;
 }
 footer .part1 {
-  padding: 4rem;
+  padding: 4rem 2rem;
+}
+@media (min-width: 992px) {
+  footer .part1 {
+    padding: 4rem;
+  }
 }
 footer .part1 .container {
   text-align: center;
 }
 footer .part1 .container .part1_titulo {
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0rem 0.3rem;
 }
 footer .part1 .container .part1_texto {
   color: #c6c4c4;
   line-height: 1.3;
-  margin-bottom: 4rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 @media (min-width: 992px) {
   footer .part1 .container .part1_texto {
-    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
   }
 }
 @media (min-width: 576px) {
@@ -12968,7 +12975,7 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
   background-color: #b11f24;
-  padding: 0.7rem 2.2rem;
+  padding: 0.7rem 2.4rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -13002,9 +13009,10 @@ header .navbar .navbar-collapse .nav-item.contact-us a {
   text-decoration: none;
   color: white;
   animation: shake 1.5s infinite;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   z-index: 10;
+  font-size: 1.6rem;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a:after {
   display: none;
@@ -13026,7 +13034,8 @@ header .navbar-brand .marca {
 }
 
 .nav-link.cambiocolornavlink::after {
-  background-color: rgb(255, 255, 255) !important; /* Cambia el color de fondo de :after */
+  background-color: rgb(255, 255, 255) !important;
+  /* Cambia el color de fondo de :after */
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S1 {
@@ -13078,8 +13087,8 @@ header .navbar-brand .marca {
   margin-bottom: 2rem;
 }
 .hero .container .circle {
-  height: 300px;
-  width: 300px;
+  height: 340px;
+  width: 340px;
   border-radius: 50%;
   background-color: #20396f;
   display: flex;
@@ -13100,8 +13109,8 @@ header .navbar-brand .marca {
 .hero .container .circle:before {
   content: "";
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 340px;
+  width: 340px;
   background-image: conic-gradient(#e62d2d 20deg, transparent 120deg);
   animation: rotar 3s infinite;
 }
@@ -13114,8 +13123,8 @@ header .navbar-brand .marca {
 .hero .container .circle:after {
   content: "";
   position: absolute;
-  height: 290px;
-  width: 290px;
+  height: 330px;
+  width: 330px;
   background-color: #20396f;
   border-radius: 50%;
 }
@@ -13144,11 +13153,6 @@ header .navbar-brand .marca {
 .hero .container .circle .btn {
   z-index: 1;
 }
-@media (max-width: 991.98px) {
-  .hero .container .circle .btn {
-    padding: 0.85rem 1.2rem;
-  }
-}
 
 /*VIDEO **************************************/
 .video {
@@ -13173,7 +13177,7 @@ header .navbar-brand .marca {
 /*FUNCIONAMIENTO
 ***********************************/
 .como_funciona {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 @media (min-width: 992px) {
   .como_funciona {
@@ -13188,33 +13192,31 @@ header .navbar-brand .marca {
 .como_funciona .container h3, .como_funciona .container .h3 {
   margin: 2rem 0;
   color: #b11f24;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 992px) {
   .como_funciona .container h3, .como_funciona .container .h3 {
-    padding: 3rem 0;
+    padding: 0 0 2rem;
     text-align: left;
   }
 }
-.como_funciona .container p {
-  text-align: justify;
-}
 .como_funciona .container .lema_contenedor {
-  margin: 4rem auto;
+  margin: 4rem auto 6rem;
   text-align: center;
   display: flex;
   color: #20396f;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  font-weight: 700;
   border-radius: 25px;
   box-shadow: inset 0 0 0 3px #20396f;
   justify-content: space-evenly;
+  line-height: 1.2;
 }
 @media (min-width: 992px) {
   .como_funciona .container .lema_contenedor {
     font-size: 2.7rem;
-    max-width: 65%;
+    max-width: 60%;
   }
 }
 .como_funciona .container .lema_contenedor .lema {
@@ -13228,29 +13230,29 @@ header .navbar-brand .marca {
   width: 50%;
   color: rgb(255, 255, 255);
   background-color: #20396f;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   box-shadow: inset 0 0 0 3px #20396f;
 }
 .como_funciona .container .lema_contenedor p {
   text-align: center;
-  margin: 5px 5px;
+  margin: 12px 5px;
 }
 @media (min-width: 992px) {
   .como_funciona .container .lema_contenedor p {
-    margin: 10px 5px;
+    margin: 15px 5px;
   }
 }
 .como_funciona .container .como_funciona_lista ul {
   padding: 0;
 }
 .como_funciona .container .como_funciona_lista ul li {
-  margin: 3rem 0rem 1rem 0rem;
+  margin: 2rem 0rem 1rem 0rem;
   list-style-type: none;
-  background-color: #c6c4c4;
-  height: 12rem;
+  background-color: #e3e3e3;
+  height: 11rem;
   border-radius: 0 50px 50px 0;
   position: relative;
-  padding-left: 5rem;
+  padding-left: 4rem;
   padding-right: 1.5rem;
   display: flex;
 }
@@ -13258,14 +13260,14 @@ header .navbar-brand .marca {
   .como_funciona .container .como_funciona_lista ul li {
     height: 8rem;
     border-radius: 50px;
-    margin: 6rem 1rem 1rem 0rem;
+    margin: 4rem 1rem 1rem 0rem;
     padding-left: 11rem;
     padding-right: 3rem;
   }
 }
 .como_funciona .container .como_funciona_lista ul li .circulo {
   position: absolute;
-  left: -25px;
+  left: -20px;
   top: 9px;
   color: #24314f;
   background-color: transparent;
@@ -13273,9 +13275,8 @@ header .navbar-brand .marca {
   height: 10rem;
   display: grid;
   border-radius: 50%;
-  font-family: "Arial-Black";
-  font-weight: bold;
-  font-size: 5.3rem;
+  font-weight: 700;
+  font-size: 4.5rem;
 }
 @media (min-width: 992px) {
   .como_funciona .container .como_funciona_lista ul li .circulo {
@@ -13285,17 +13286,19 @@ header .navbar-brand .marca {
     background-color: #24314f;
     min-width: 10rem;
     height: 10rem;
-    font-size: 6.3rem;
+    font-size: 5.5rem;
   }
 }
 .como_funciona .container .como_funciona_lista ul li p {
   margin: auto 1rem;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
+  margin-left: 2rem;
 }
 @media (min-width: 992px) {
   .como_funciona .container .como_funciona_lista ul li p {
     font-size: 2.1rem;
+    margin-left: 1rem;
   }
 }
 
@@ -13308,56 +13311,109 @@ header .navbar-brand .marca {
   }
 }
 .como_vendemos .container > h2, .como_vendemos .container > .h2 {
-  margin: 3rem 0;
+  margin: 3rem 0 1rem;
   text-align: center;
 }
 @media (min-width: 992px) {
   .como_vendemos .container > h2, .como_vendemos .container > .h2 {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
   }
 }
 .como_vendemos .container > h3, .como_vendemos .container > .h3 {
-  margin: 1rem 0;
+  margin: 1rem 0 4.5rem;
   font-weight: bold;
   text-align: center;
 }
 @media (min-width: 992px) {
   .como_vendemos .container > h3, .como_vendemos .container > .h3 {
-    padding: 3rem 0 0;
-    padding: 3rem 0;
+    padding: 1rem 0 0;
     text-align: left;
   }
 }
-.como_vendemos .container .como_vendemos_lista .uno .titulo, .como_vendemos .container .como_vendemos_lista .dos .titulo, .como_vendemos .container .como_vendemos_lista .tres .titulo, .como_vendemos .container .como_vendemos_lista .cuatro .titulo, .como_vendemos .container .como_vendemos_lista .cinco .titulo {
-  margin-top: 4rem;
+.como_vendemos .container .como_vendemos_lista .uno .titulo,
+.como_vendemos .container .como_vendemos_lista .dos .titulo,
+.como_vendemos .container .como_vendemos_lista .tres .titulo,
+.como_vendemos .container .como_vendemos_lista .cuatro .titulo,
+.como_vendemos .container .como_vendemos_lista .cinco .titulo {
+  margin-top: 3rem;
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
-.como_vendemos .container .como_vendemos_lista .uno .titulo > h2, .como_vendemos .container .como_vendemos_lista .uno .titulo > .h2, .como_vendemos .container .como_vendemos_lista .dos .titulo > h2, .como_vendemos .container .como_vendemos_lista .dos .titulo > .h2, .como_vendemos .container .como_vendemos_lista .tres .titulo > h2, .como_vendemos .container .como_vendemos_lista .tres .titulo > .h2, .como_vendemos .container .como_vendemos_lista .cuatro .titulo > h2, .como_vendemos .container .como_vendemos_lista .cuatro .titulo > .h2, .como_vendemos .container .como_vendemos_lista .cinco .titulo > h2, .como_vendemos .container .como_vendemos_lista .cinco .titulo > .h2 {
-  margin: auto 1.5rem;
+@media (min-width: 992px) {
+  .como_vendemos .container .como_vendemos_lista .uno .titulo,
+  .como_vendemos .container .como_vendemos_lista .dos .titulo,
+  .como_vendemos .container .como_vendemos_lista .tres .titulo,
+  .como_vendemos .container .como_vendemos_lista .cuatro .titulo,
+  .como_vendemos .container .como_vendemos_lista .cinco .titulo {
+    margin-top: 5rem;
+  }
 }
-.como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido, .como_vendemos .container .como_vendemos_lista .cuatro .contenido, .como_vendemos .container .como_vendemos_lista .cinco .contenido {
+.como_vendemos .container .como_vendemos_lista .uno .titulo > h3, .como_vendemos .container .como_vendemos_lista .uno .titulo > .h3,
+.como_vendemos .container .como_vendemos_lista .dos .titulo > h3,
+.como_vendemos .container .como_vendemos_lista .dos .titulo > .h3,
+.como_vendemos .container .como_vendemos_lista .tres .titulo > h3,
+.como_vendemos .container .como_vendemos_lista .tres .titulo > .h3,
+.como_vendemos .container .como_vendemos_lista .cuatro .titulo > h3,
+.como_vendemos .container .como_vendemos_lista .cuatro .titulo > .h3,
+.como_vendemos .container .como_vendemos_lista .cinco .titulo > h3,
+.como_vendemos .container .como_vendemos_lista .cinco .titulo > .h3 {
+  margin-left: 2rem;
+  font-family: "Noto serif", serif;
+  color: #24314f;
+  font-size: 2.6rem;
+}
+@media (min-width: 992px) {
+  .como_vendemos .container .como_vendemos_lista .uno .titulo > h3, .como_vendemos .container .como_vendemos_lista .uno .titulo > .h3,
+  .como_vendemos .container .como_vendemos_lista .dos .titulo > h3,
+  .como_vendemos .container .como_vendemos_lista .dos .titulo > .h3,
+  .como_vendemos .container .como_vendemos_lista .tres .titulo > h3,
+  .como_vendemos .container .como_vendemos_lista .tres .titulo > .h3,
+  .como_vendemos .container .como_vendemos_lista .cuatro .titulo > h3,
+  .como_vendemos .container .como_vendemos_lista .cuatro .titulo > .h3,
+  .como_vendemos .container .como_vendemos_lista .cinco .titulo > h3,
+  .como_vendemos .container .como_vendemos_lista .cinco .titulo > .h3 {
+    font-size: 4.2rem;
+  }
+}
+.como_vendemos .container .como_vendemos_lista .uno .contenido,
+.como_vendemos .container .como_vendemos_lista .dos .contenido,
+.como_vendemos .container .como_vendemos_lista .tres .contenido,
+.como_vendemos .container .como_vendemos_lista .cuatro .contenido,
+.como_vendemos .container .como_vendemos_lista .cinco .contenido {
   margin: 2rem 0;
   list-style-type: none;
   display: flex;
-  text-align: justify;
-  align-items: center;
-  margin-left: 6%;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   border-bottom: 5px solid #20396f;
 }
 @media (min-width: 992px) {
-  .como_vendemos .container .como_vendemos_lista .uno .contenido, .como_vendemos .container .como_vendemos_lista .dos .contenido, .como_vendemos .container .como_vendemos_lista .tres .contenido, .como_vendemos .container .como_vendemos_lista .cuatro .contenido, .como_vendemos .container .como_vendemos_lista .cinco .contenido {
-    margin: 3rem 2rem 0rem 6rem;
+  .como_vendemos .container .como_vendemos_lista .uno .contenido,
+  .como_vendemos .container .como_vendemos_lista .dos .contenido,
+  .como_vendemos .container .como_vendemos_lista .tres .contenido,
+  .como_vendemos .container .como_vendemos_lista .cuatro .contenido,
+  .como_vendemos .container .como_vendemos_lista .cinco .contenido {
+    padding-bottom: 4rem;
+    align-items: center;
+    margin: 1rem 2rem 0rem 10rem;
+    margin-left: 6%;
   }
 }
-.como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img, .como_vendemos .container .como_vendemos_lista .tres .contenido img, .como_vendemos .container .como_vendemos_lista .cuatro .contenido img, .como_vendemos .container .como_vendemos_lista .cinco .contenido img {
-  min-width: 45px;
-  height: 45px;
-  margin-right: 1rem;
+.como_vendemos .container .como_vendemos_lista .uno .contenido img,
+.como_vendemos .container .como_vendemos_lista .dos .contenido img,
+.como_vendemos .container .como_vendemos_lista .tres .contenido img,
+.como_vendemos .container .como_vendemos_lista .cuatro .contenido img,
+.como_vendemos .container .como_vendemos_lista .cinco .contenido img {
+  min-width: 50px;
+  height: 50px;
+  margin-right: 2rem;
 }
 @media (min-width: 992px) {
-  .como_vendemos .container .como_vendemos_lista .uno .contenido img, .como_vendemos .container .como_vendemos_lista .dos .contenido img, .como_vendemos .container .como_vendemos_lista .tres .contenido img, .como_vendemos .container .como_vendemos_lista .cuatro .contenido img, .como_vendemos .container .como_vendemos_lista .cinco .contenido img {
+  .como_vendemos .container .como_vendemos_lista .uno .contenido img,
+  .como_vendemos .container .como_vendemos_lista .dos .contenido img,
+  .como_vendemos .container .como_vendemos_lista .tres .contenido img,
+  .como_vendemos .container .como_vendemos_lista .cuatro .contenido img,
+  .como_vendemos .container .como_vendemos_lista .cinco .contenido img {
     min-width: 96px;
     height: 96px;
     margin-right: 3rem;
@@ -13374,16 +13430,20 @@ header .navbar-brand .marca {
   color: #b11f24;
 }
 .como_vendemos .container .como_vendemos_lista .tres .lista_flecha .flecha {
-  width: 35%;
+  width: 30%;
 }
 .como_vendemos .container .como_vendemos_lista .tres .antesydespues {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.6rem;
+}
+@media (min-width: 992px) {
+  .como_vendemos .container .como_vendemos_lista .tres .antesydespues {
+    gap: 3rem;
+  }
 }
 .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto {
   position: relative;
-  width: 45%;
   border: 5px solid #20396f;
   border-radius: 10%;
   overflow: hidden;
@@ -13392,7 +13452,7 @@ header .navbar-brand .marca {
   width: 100%;
 }
 .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto .valor {
-  padding: 0.1rem;
+  padding: 0.4rem 1rem;
   width: 50%;
   position: absolute;
   bottom: 0px;
@@ -13404,11 +13464,14 @@ header .navbar-brand .marca {
   font-weight: bold;
   text-align: center;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .como_vendemos .container .como_vendemos_lista .tres .antesydespues .foto .valor {
-    font-size: 1.3rem;
-    padding: 0.2rem;
+    font-size: 1.4rem;
+    padding: 1rem 0;
   }
+}
+.como_vendemos .container .como_vendemos_lista .cinco .contenido {
+  border-bottom: 0;
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido {
   background-color: #fff;
@@ -13418,7 +13481,7 @@ header .navbar-brand .marca {
   font-weight: bold;
   border-radius: 25px;
   padding: 2rem;
-  margin-top: 5rem;
+  margin: 2rem 0;
   box-shadow: 0 0 8px 2px #c6c4c4;
 }
 @media (min-width: 576px) {
@@ -13432,19 +13495,14 @@ header .navbar-brand .marca {
   }
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido h3, .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .h3 {
-  margin: 2rem 0;
+  margin: 1rem 0 2rem;
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido h4, .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido .h4 {
-  font-weight: bold;
+  font-weight: 700;
+  padding: 0;
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p {
   text-align: center;
-  margin: 5px 5px;
-}
-@media (min-width: 992px) {
-  .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p {
-    margin: 10px 5px;
-  }
 }
 
 .casos_exito {
@@ -13462,7 +13520,7 @@ header .navbar-brand .marca {
   color: #20396f;
 }
 .casos_exito .container h3, .casos_exito .container .h3 {
-  padding: 3rem 0;
+  padding: 1rem 0 3rem;
   color: #b11f24;
   font-weight: bold;
   text-align: center;
@@ -13478,13 +13536,18 @@ header .navbar-brand .marca {
   opacity: 0.25;
 }
 .casos_exito .container .proyectos > p {
-  margin: 2rem 0;
-  font-size: 2.5rem;
+  margin: 2rem auto;
+  font-size: 2rem;
   font-weight: 600;
   background-color: lightgray;
   width: fit-content;
   border-radius: 25px;
   padding: 0.5rem 3rem;
+}
+@media (min-width: 992px) {
+  .casos_exito .container .proyectos > p {
+    font-size: 2.5rem;
+  }
 }
 .casos_exito .container .proyectos > p i {
   margin-right: 1.5rem;
@@ -13498,7 +13561,7 @@ header .navbar-brand .marca {
 }
 .casos_exito .container .proyectos .p_antesydespues .foto {
   position: relative;
-  width: 90%;
+  width: 95%;
   min-width: 200px;
   border: 6px solid #20396f;
   border-radius: 6%;
@@ -13532,28 +13595,20 @@ header .navbar-brand .marca {
   }
 }
 .casos_exito .container .proyectos .proyecto_resumen table {
-  width: 90%;
-  margin: 3rem auto;
+  margin: 4rem auto 0;
   color: #20396f;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #c6c4c4;
+  width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .casos_exito .container .proyectos .proyecto_resumen table {
-    font-size: 3rem;
-  }
-}
-.casos_exito .container .proyectos .proyecto_resumen table tbody tr {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 0.7rem 0;
-}
-@media (min-width: 576px) {
-  .casos_exito .container .proyectos .proyecto_resumen table tbody tr {
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 6rem auto 3rem;
+    font-size: 2.2rem;
+    max-width: 800px;
   }
 }
 .casos_exito .container .proyectos .proyecto_resumen table tbody tr:nth-child(3) {
@@ -13561,6 +13616,25 @@ header .navbar-brand .marca {
 }
 .casos_exito .container .proyectos .proyecto_resumen table tbody tr:nth-child(4) {
   font-weight: bolder;
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr td {
+  padding: 10px 15px;
+  text-align: right;
+  border-bottom: 1px solid #fff;
+  line-height: 1.2;
+}
+@media (min-width: 992px) {
+  .casos_exito .container .proyectos .proyecto_resumen table tbody tr td {
+    padding: 12px 15px;
+  }
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr td:first-child {
+  min-width: 65%;
+  text-align: left;
+  background-color: #e3e3e3;
+}
+.casos_exito .container .proyectos .proyecto_resumen table tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 /*FAQ Accordion
@@ -13587,8 +13661,7 @@ header .navbar-brand .marca {
 .preguntas_frecuentes .faq .faq_accordion .accordion {
   padding-bottom: 2rem;
   margin-top: 4.5rem;
-  --bs-accordion-border: none
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-border: none --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .preguntas_frecuentes .faq .faq_accordion .accordion-item {
   border: none;
@@ -13599,11 +13672,10 @@ header .navbar-brand .marca {
 .preguntas_frecuentes .faq .faq_accordion .accordion-item .accordion-button {
   color: #20396f;
   padding: 1.7rem 2rem;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 600;
   background-color: #f4f4f4;
-  line-height: 1.5;
-  border-radius: 15px;
+  border-radius: 0 35px 35px 0;
   outline: 1px solid #c6c4c4;
   font-family: "Montserrat", sans-serif;
 }
@@ -13634,7 +13706,7 @@ header .navbar-brand .marca {
   padding: 4rem 0;
   text-align: center;
   color: black;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../../images/fondoformulario3.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../images/fondoformulario3.jpg);
 }
 @media (min-width: 992px) {
   .formulario {
@@ -13642,12 +13714,17 @@ header .navbar-brand .marca {
   }
 }
 .formulario .tituloFormulario {
-  margin: 2rem 0 4rem;
+  margin: 0 0 4rem;
+}
+@media (min-width: 992px) {
+  .formulario .tituloFormulario {
+    margin: 2rem 0 4rem;
+  }
 }
 .formulario .tituloFormulario p {
   font-size: 1.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .formulario .tituloFormulario p {
     font-size: 2.1rem;
   }
@@ -13676,11 +13753,10 @@ header .navbar-brand .marca {
   }
 }
 .formulario form .datos .form-group .form-control {
-  border-radius: 0px;
-  padding: 0.85rem 1rem;
+  padding: 1rem;
   font-size: 1.6rem;
   text-align: left;
-  border: 1px solid #9c9c9c;
+  border: 1px solid #e3e3e3;
 }
 .formulario form .datos .form-group textarea {
   height: 178px;
