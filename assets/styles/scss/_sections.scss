@@ -470,6 +470,14 @@
                         text-align: center;
                         // margin: 5px 5px;
                     }
+                    p:last-child {
+                        color: white;
+                        background: $color-sales;
+                        width: fit-content;
+                        margin: auto;
+                        border-radius: 25px;
+                        padding: .5rem 1.5rem;
+                      }
 
 
                 }

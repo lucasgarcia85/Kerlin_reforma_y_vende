@@ -13526,6 +13526,14 @@ header .navbar-brand .marca {
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p {
   text-align: center;
 }
+.como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p:last-child {
+  color: white;
+  background: #b11f24;
+  width: fit-content;
+  margin: auto;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+}
 
 .casos_exito {
   background-color: #f4eded;
