@@ -98,11 +98,14 @@ $(document).ready(function(){
 var progressBar = document.querySelector("#progress-bar span");
 var totalHeight = document.body.scrollHeight - window.innerHeight;
 
-window.addEventListener("scroll", function() {
-  var currentHeight = window.pageYOffset;
-  var progress = currentHeight / totalHeight * 100;
-  progressBar.style.width = progress + "%";
-});
+if (document.body.contains(progressBar)) {
+  window.addEventListener("scroll", function() {
+    var currentHeight = window.pageYOffset;
+    var progress = currentHeight / totalHeight * 100;
+    progressBar.style.width = progress + "%";
+  });
+}
+
 
 /*AOS Init
 *******************************************************/

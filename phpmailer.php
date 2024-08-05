@@ -25,9 +25,9 @@ if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
     <h1>Mensaje recibido desde www.kerlinreformas.com.ar</h1>
-    <H2>DATOS DE LA PERSONA</H2>
+    <h2>DATOS DE LA PERSONA</h2>
     <p> $name | $email | $telephone</p>
-    <h2>MENSAJE SOBRE LA PROPIEDAD A REFORMAR Y VENDER:</h2>
+    <h3>MENSAJE SOBRE LA PROPIEDAD A REFORMAR Y VENDER:</h3>
     <p>$textarea</p>
        
 HTML;
@@ -38,7 +38,7 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'c1712239.ferozo.com';
+    $mailer->Host = 'c2162446.ferozo.com';
     $mailer->SMTPAuth = true;  
     $mailer->Username = 'info@kerlinreformas.com.ar';
     $mailer->Password = 'Rioparana7/';                          

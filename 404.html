@@ -16,7 +16,7 @@
     rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="assets/styles/css/main.css">
-    <title>Kerlin - Error 404</title>
+    <title>Kerlin Reforma y vende | Error page</title>
   <style>
      
       .btn {
@@ -26,7 +26,7 @@
         text-decoration: none;
         transition: all 0.3s ease;
         margin: 1rem 0;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -36,6 +36,7 @@
         font-weight: 600;
         border-radius: 0px;
         z-index: 1;
+        border-radius: 25px;
       }
 
       .btn:after {
@@ -57,7 +58,7 @@
       }
 
       .page-404 .number-404 {
-        font-size: 12.5em;
+        font-size: 10em;
         font-weight: 700;
         color: #002071;
         line-height: 1;
@@ -106,18 +107,14 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="https://kerlinreformas.com.ar">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="https://kerlin.com.ar/propiedades/todas/venta?order=1" target="_blank">Propiedades</a></li>
-            
           </ul>
-
         </div>
       </div>
     </nav>
-
   </header>
 
   <main>
-
-    <section class="page-404 page-404-es" style="display:none;">
+    <section class="page-404 page-404-es">
       <div class="container">
           <div class="text-center w-100">
             <span class="number-404 m-0">404</span>
@@ -129,16 +126,25 @@
           </div>
       </div>
     </section>
-
   </main>
 
+  <!-- FOOTER: Begin -->
   <footer>
-    <p class="matriculado">Matriculado Responsable: Beatriz Kerlin - Matricula 1023</p>
-    <div class="copyright">
+    <div class="footer-bottom">
+      <p class="matriculado">Matriculado Responsable: Beatriz Kerlin - Matricula 1023</p>
       <p class="copy">&copy;<span class="year-copy">2023</span> Todos los derechos reservados.</p>
     </div>
-    
+
+    <div class="footer-widget">
+      <div class="widget-container">
+        <a href="https://wa.me/5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información"
+          target="_blank" class="wwidget-button template-3"><img alt="whatsapp"
+            src="https://d1v2p1s05qqabi.cloudfront.net/vendor/whatsappwidget/whatsapp.svg?v=91"></a>
+      </div>
+    </div>
+    <a href="#main" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
   </footer>
+  <!-- FOOTER: End -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
@@ -146,21 +152,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
   integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="assets/scripts/scripts.js"></script>
-  
-  
-  <!-- SCRIPTS: End -->
-  <script>
-  var current = location.pathname.split("/")[1];
-  
-  if (current == "en") {
-    $('.page-404-en').show();
-    $('.logo').css('background-image','url(../images/logo_tcc.png)');
-    $('.logo').attr("href", "/en/");
-  } else {
-    $('.page-404-es').show();
-  }
-  </script>
 </body>
 
 </html>
