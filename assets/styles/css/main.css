@@ -13483,7 +13483,7 @@ header .navbar-brand .marca {
   border-radius: 10px 10px 0 0;
   background-color: #20396f;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-align: center;
 }
@@ -13503,7 +13503,7 @@ header .navbar-brand .marca {
   color: #24314f;
   font-weight: bold;
   border-radius: 25px;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
   margin: 2rem 0;
   box-shadow: 0 0 8px 2px #c6c4c4;
 }
@@ -13528,12 +13528,17 @@ header .navbar-brand .marca {
   text-align: center;
 }
 .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p:last-child {
-  color: white;
-  background: #b11f24;
+  color: #b11f24;
   width: fit-content;
   margin: auto;
   border-radius: 25px;
-  padding: 0.5rem 1.5rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  .como_vendemos .container .como_vendemos_lista .cinco .finalcontenido p:last-child {
+    font-size: 3rem;
+  }
 }
 
 .casos_exito {
